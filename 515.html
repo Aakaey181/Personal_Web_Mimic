@@ -1,0 +1,3912 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="https://bold.pro/favicon.png">
+    <style>
+        @font-face {
+            font-display: swap;
+            font-family: &#x27;
+            HK Grotesk&#x27;
+            ;
+            font-style: normal;
+            font-weight: 400;
+            src: url(static/font/HKGrotesk-Regular.woff2) format(&#x27; woff2&#x27; ),
+                url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-Regular.woff) format(&#x27; woff&#x27; );
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: &#x27;
+            HK Grotesk&#x27;
+            ;
+            font-style: normal;
+            font-weight: 600;
+            src: url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-Bold.woff2) format(&#x27; woff2&#x27; ),
+                url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-Bold.woff) format(&#x27; woff&#x27; );
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: &#x27;
+            HK Grotesk&#x27;
+            ;
+            font-style: normal;
+            font-weight: 300;
+            src: url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-Light.woff2) format(&#x27; woff2&#x27; ),
+                url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-Light.woff) format(&#x27; woff&#x27; );
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: &#x27;
+            HK Grotesk&#x27;
+            ;
+            font-style: normal;
+            font-weight: 500;
+            src: url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-SemiBold.woff2) format(&#x27; woff2&#x27; ),
+                url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-SemiBold.woff) format(&#x27; woff&#x27; );
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: &#x27;
+            HK Grotesk&#x27;
+            ;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-700.woff2) format(&#x27; woff2&#x27; ),
+                url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-700.woff) format(&#x27; woff&#x27; );
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: &#x27;
+            Source Sans Pro&#x27;
+            ;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/blobcontent/pwb/prs/styles/fonts/source-sans-pro-regular.woff2) format(&#x27; woff2&#x27; ),
+                url(/blobcontent/pwb/prs/styles/fonts/source-sans-pro-regular.woff) format(&#x27; woff&#x27; );
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: &#x27;
+            Source Sans Pro&#x27;
+            ;
+            font-style: normal;
+            font-weight: 600;
+            src: url(/blobcontent/pwb/prs/styles/fonts/source-sans-pro-600.woff2) format(&#x27; woff2&#x27; ),
+                url(/blobcontent/pwb/prs/styles/fonts/source-sans-pro-600.woff) format(&#x27; woff&#x27; );
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: &#x27;
+            Source Sans Pro&#x27;
+            ;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/blobcontent/pwb/prs/styles/fonts/source-sans-pro-700.woff2) format(&#x27; woff2&#x27; ),
+                url(/blobcontent/pwb/prs/styles/fonts/source-sans-pro-700.woff) format(&#x27; woff&#x27; );
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: &#x27;
+            HK Grotesk&#x27;
+            ;
+            font-style: italic;
+            font-weight: 300;
+            src: url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-LightItalic.woff2) format(&#x27; woff2&#x27; ),
+                url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-LightItalic.woff) format(&#x27; woff&#x27; );
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: &#x27;
+            HK Grotesk&#x27;
+            ;
+            font-style: italic;
+            font-weight: 600;
+            src: url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-SemiBoldItalic.woff2) format(&#x27; woff2&#x27; ),
+                url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-SemiBoldItalic.woff) format(&#x27; woff&#x27; );
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: &#x27;
+            HK Grotesk&#x27;
+            ;
+            font-style: italic;
+            font-weight: 700;
+            src: url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-BoldItalic.woff2) format(&#x27; woff2&#x27; ),
+                url(/blobcontent/pwb/prs/styles/fonts/HKGrotesk-BoldItalic.woff) format(&#x27; woff&#x27; );
+        }
+    </style>
+    <script id="schema-person" type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Zeen Lin",
+            "jobTitle": "Intern Software Developer",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Vancouver",
+                "addressRegion": "British Columbia"
+            },
+            "knowsLanguage": [],
+            "description": "Experienced in backend management systems and frontend user interface development and offering skills in Java and UI/UX design etc. Speaking both Chinese and English, and accustomed to working with global teams in a cross-cultural setting. Pursues opportunities to learn new skills and contribute to group success.\n",
+            "hasOccupation": [{
+                "@type": "Role",
+                "hasOccupation": [{
+                    "@type": "Occupation",
+                    "name": "Intern Software Developer"
+                }, {
+                    "@type": "Occupation",
+                    "name": "Business Development Intern"
+                }]
+            }],
+            "worksFor": [{
+                "@type": "Organization",
+                "name": "Ping An Bank Co., Ltd"
+            }, {
+                "@type": "Organization",
+                "name": "Look4Tutor"
+            }],
+            "alumniOf": [{
+                "@type": "CollegeOrUniversity",
+                "name": "University of British Columbia"
+            }]
+        }
+    </script>
+    <title>Contact Zeen Lin, Vancouver</title>
+    <link rel="canonical" href="https://ca.bold.pro/my/zeen-lin">
+    <meta name="description" content="Zeen Lin, Experienced in backend management systems and frontend user interface development and offering skills in Java and UI/UX design etc. Speaking both Chinese and English, and accustomed to working with global teams in a cross-cultural setting. Pursues opportunities to learn new skills and contribute to group success.
+">
+    <meta property="og:title" content="Contact Zeen Lin, Vancouver">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:description" content="Zeen Lin, Experienced in backend management systems and frontend user interface development and offering skills in Java and UI/UX design etc. Speaking both Chinese and English, and accustomed to working with global teams in a cross-cultural setting. Pursues opportunities to learn new skills and contribute to group success.
+">
+    <meta property="og:site_name" content="bold.pro">
+    <meta property="og:type" content="Bold Profile">
+    <meta property="og:url" content="https://ca.bold.pro/my/zeen-lin">
+    <meta property="og:image" content="https://bold.pro/prflphoto/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg">
+    <meta property="og:image:secure_url" content="https://bold.pro/prflphoto/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="Bold Pro">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="twitter:title" content="Contact Zeen Lin, Vancouver">
+    <meta property="twitter:description" content="Zeen Lin, Experienced in backend management systems and frontend user interface development and offering skills in Java and UI/UX design etc. Speaking both Chinese and English, and accustomed to working with global teams in a cross-cultural setting. Pursues opportunities to learn new skills and contribute to group success.
+">
+    <meta property="twitter:url" content="https://ca.bold.pro/my/zeen-lin">
+    <meta property="twitter:image" content="https://bold.pro/prflphoto/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@boldpro">
+    <meta property="twitter:site:id" content="@boldpro">
+    <meta property="twitter:creator" content="@boldpro">
+    <meta property="twitter:image:type" content="image/jpeg">
+    <meta property="twitter:image:width" content="400">
+    <meta property="twitter:image:height" content="300">
+    <link rel="alternate" type="application/rss+xml" title="Bold.pro Feed" href="https://bold.pro/feed">
+    <link rel="preload" as="image" href="static/picture/people-cards.svg">
+    <meta name="next-head-count" content="34">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="anonymous">
+    <link rel="preload" as="style" data-href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap">
+    <style>
+        &nbsp;
+    </style>
+    <link rel="stylesheet" href="static/css/css2.css" media="print" onload="this.media='all'">
+    <style>
+        &nbsp;
+    </style><noscript>
+        <link rel="stylesheet" type="text/css" data-href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap">
+    </noscript>
+    <script id="browser-event-js" data-nscript="beforeInteractive">
+        function getAssetsHost(t) {
+            let s = "localhost:3000",
+                e = "assets",
+                l = "bold" === t.split(".")[0] ? "" : t.split(".")[0],
+                o = t.replace(l, ""),
+                $ = /^qa|^reg|^stg/.test(l.split("-")[0]),
+                a = "" === l ? e + "." : $ ? l.split("-")[0] + "-" + e : e;
+            return t !== s ? a + o : s
+        }
+        const hostUrl = getAssetsHost(location.host);
+
+        function InitializeMetricsForPage(e, f, a) {
+            (null == a || void 0 == a) && (a = {
+                useDevJs: !1
+            }), ("" == a.commonScriptsUrl || void 0 == a.commonScriptsUrl) && (a.commonScriptsUrl = location.protocol + "//" + hostUrl + "/blob/common"), ("" == a.clientEventsAPIUrl || void 0 == a.clientEventsAPIUrl) && (a.clientEventsAPIUrl = location.protocol + "//" + location.host + "/clientevents");
+            var c = a.commonScriptsUrl + "/scripts/splashEventStream" + (!0 == a.useDevJs ? "" : ".min") + ".js?v=" + (void 0 == a.besVer ? "latest" : a.besVer),
+                d = a.commonScriptsUrl + "/scripts/splashMetrics" + (!0 == a.useDevJs ? "" : ".min") + ".js?v=" + (void 0 == a.muVer ? "latest" : a.muVer),
+                b = [];
+            b.push(loadDynamicScriptFileAsync(c, !0)), b.push(loadDynamicScriptFileAsync(d, !0)), Promise.all(b).then(function() {
+                var b = MetricsUtil.ClassInitializers.getNewConfigurationObject(a.MuCfg);
+                b.Value_PortalCD = e, b.Value_ProductCD = f, b.splashEventsUrl = c, b.useForcePushForAllEvents = void 0 == a.useForcePushForAllEvents || a.useForcePushForAllEvents, b.SplashConfig.AjaxDetails.eventsPostEndpointUrl = a.clientEventsAPIUrl + "/" + b.SplashConfig.AjaxDetails.eventsPostEndpointUrl, MetricsUtil.initializeAsync(window, b)
+            })
+        }
+
+        function loadDynamicScriptFileAsync(a, b) {
+            return new Promise(function(e, f) {
+                try {
+                    var c = document.createElement("script");
+                    c.src = a, c.onload = e, c.async = null == b || null == b || b, c.onerror = function(a) {
+                        f(a, c)
+                    };
+                    var d = document.getElementsByTagName("script")[0];
+                    d.parentNode.insertBefore(c, d)
+                } catch (g) {
+                    f(g)
+                }
+            })
+        }
+        var addParamsData = {
+            MuCfg: {
+                enableWebVitals: true
+            }
+        };
+        InitializeMetricsForPage('PRS', 'PWB', addParamsData);
+    </script>
+    <script id="tracking-js" data-nscript="beforeInteractive">
+        window.globalCompVars = window.globalCompVars || {};
+        window.ssr_profile = true;
+        try {
+            if (typeof TS != 'undefined') {
+                TS.Track("PWB", "PRS", undefined, 'true', 'true', '', 'true')
+            } else {
+                var funcPointer = setInterval(callTrackingApi, 10);
+
+                function callTrackingApi() {
+                    if (typeof TS != 'undefined') {
+                        clearInterval(funcPointer);
+                        TS.Track("PWB", "PRS", undefined, 'true', 'true', '', 'true')
+
+                    }
+                }
+            }
+        } catch (err) {
+            console.log('visitor error: ' + err)
+        }
+    </script>
+    <script id="route-data-js" data-nscript="beforeInteractive">
+        window.__ROUTE_DATA__ = {
+            "useruid": "dbf506c7-79b4-4062-9202-2d140cdb64fa",
+            "portalSettings": {
+                "apiUrl": "https://api-personalwebsite.bold.pro/v1/",
+                "portalId": 207,
+                "portalCd": "MPR",
+                "blobContainer": "prs",
+                "portalName": "bold.pro",
+                "builderUrl": "https://bold.pro",
+                "googleRecaptchaSiteKey": "6LeHHCYdAAAAAKmrZaWyssFxTcQQaiPdUydDwqEv",
+                "tosUrl": "https://bold.pro/terms",
+                "privPolicyUrl": "https://bold.pro/privacy-policy",
+                "visitorServiceUrl": "https://assets.bold.pro/visitor/",
+                "resourceurl": "/blobcontent/pwb/prs/",
+                "contactUrl": "https://bold.pro/contact",
+                "baseUrl": "https://bold.pro",
+                "isProfileDomain": true,
+                "isJTTheme": null,
+                "userStatus": null,
+                "configEnviroment": "prod",
+                "countrySpecificUrl": "https://bold.pro",
+                "pwApiUrlV1": "https://bold.pro/pwb/api/v1/",
+                "publishedWebsiteUrl": "https://bold.pro'/my/'",
+                "isIntlPortal": false,
+                "cultureCD": "en"
+            },
+            "publishStatus": "PUBS",
+            "isSampleUrl": false,
+            "resumeIndex": "515",
+            "activeCountry": "ca",
+            "countryList": [],
+            "urlCountryCode": null,
+            "shouldWebsiteShow": true,
+            "canonicalUrl": "https://ca.bold.pro",
+            "indexable": true,
+            "showContactCTA": true,
+            "doc": {
+                "sections": [{
+                    "sectionTypeCD": "PICT",
+                    "paragraphs": [{
+                        "docDatas": [{
+                            "charValue": "https://intlphotos.blob.core.windows.net/photos/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg",
+                            "fieldCD": "PURL",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "https://intlphotos.blob.core.windows.net/photos/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg",
+                            "fieldCD": "OURL",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "https://intlphotos.blob.core.windows.net/photos/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/mobile/1696292195407/oxywcx.jpeg",
+                            "fieldCD": "PMURL",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "https://www.myperfectresume.com/blobcontent/pwb/background-images/SeniorSoftwareEngineer/Template2/@x1/1920px_1.png",
+                            "fieldCD": "BIMG",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "https://www.myperfectresume.com/blobcontent/pwb/background-images/SeniorSoftwareEngineer/carousel/@x1/carousel_1.png",
+                            "fieldCD": "TIMG",
+                            "dateTimeValue": null
+                        }],
+                        "index": 1,
+                        "id": "0d6dee83-bb65-f422-0cff-f778443bede5",
+                        "category": null
+                    }],
+                    "index": 0,
+                    "name": "Photo",
+                    "id": "f5e96d92-700f-30df-dc1d-cc047f3510f0"
+                }, {
+                    "sectionTypeCD": "NAME",
+                    "paragraphs": [{
+                        "docDatas": [{
+                            "charValue": "Zeen",
+                            "fieldCD": "FNAM",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "Lin",
+                            "fieldCD": "LNAM",
+                            "dateTimeValue": null
+                        }],
+                        "index": 1,
+                        "id": "c2406b7d-a275-d9e3-5dd8-6da052e4b7fd",
+                        "category": null
+                    }],
+                    "index": 0,
+                    "name": "Name",
+                    "id": "722942ac-d51f-4d84-9ee1-6964f04238a8"
+                }, {
+                    "sectionTypeCD": "CNTC",
+                    "paragraphs": [{
+                        "docDatas": [{
+                            "charValue": "",
+                            "fieldCD": "STRT",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "British Columbia",
+                            "fieldCD": "STAT",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "Vancouver",
+                            "fieldCD": "CITY",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "ZIPC",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "CNTY",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "+1 7788670231",
+                            "fieldCD": "HPHN",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "CPHN",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "zeenlin.ubc@gmail.com",
+                            "fieldCD": "EMAI",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "WEB1",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "Vancouver British Columbia",
+                            "fieldCD": "ADDR",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "https://bold.pro/my/zeen-lin/515",
+                            "fieldCD": "SOCL",
+                            "dateTimeValue": null
+                        }],
+                        "index": 1,
+                        "id": "8b747bae-fa4b-41bb-a1cf-3bc9f05bb0fb",
+                        "category": null
+                    }],
+                    "index": 0,
+                    "name": "Contact",
+                    "id": "86f0d392-c16c-402a-a211-7b032868df3f"
+                }, {
+                    "sectionTypeCD": "ALNK",
+                    "paragraphs": [{
+                        "docDatas": [{
+                            "charValue": "https://www.linkedin.com/in/zeen-lin-361148230/",
+                            "fieldCD": "LNK1",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "LNK2",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "LNK3",
+                            "dateTimeValue": null
+                        }],
+                        "index": 1,
+                        "id": "5b12f699-0f36-e8f8-c5e9-1b5ab411133a",
+                        "category": null
+                    }],
+                    "index": 0,
+                    "name": "Linkedln Profile",
+                    "id": "9ee0d896-fbb3-ed28-75db-9ec3680fbb10"
+                }, {
+                    "sectionTypeCD": "QUOT",
+                    "paragraphs": [{
+                        "docDatas": [{
+                            "charValue": "36",
+                            "fieldCD": "QOID",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "The price of inaction is far greater than the cost of a mistake",
+                            "fieldCD": "QTXT",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "Meg Whitman",
+                            "fieldCD": "QAUT",
+                            "dateTimeValue": null
+                        }],
+                        "index": 1,
+                        "id": "dc617832-22b2-4b97-a40c-5efb4b9541e7",
+                        "category": null
+                    }],
+                    "index": 0,
+                    "name": "Quote",
+                    "id": "e5930591-97bc-41ff-84b0-78a375aafb96"
+                }, {
+                    "sectionTypeCD": "EXPR",
+                    "paragraphs": [{
+                        "docDatas": [{
+                            "charValue": "06 2023",
+                            "fieldCD": "JSTD",
+                            "dateTimeValue": "2023-06-05T07:00:00Z"
+                        }, {
+                            "charValue": "07 2023",
+                            "fieldCD": "EDDT",
+                            "dateTimeValue": "2023-07-05T07:00:00Z"
+                        }, {
+                            "charValue": "Ping An Bank Co., Ltd",
+                            "fieldCD": "COMP",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "Intern Software Developer",
+                            "fieldCD": "JTIT",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "JCIT",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "Guangzhou, China",
+                            "fieldCD": "JLOC",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "JSTA",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "JCNT",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "<ul>\n  <li>Designed and developed the Security Backend Management System that meets head office needs.</li>\n  <li>Conducted regular security assessments and vulnerability scans, proactively identifying and addressing 7 potential security risks.</li>\n  <li>Designed and implemented a modular architecture that allowed seamless integration of 12 security subsystems, enabling real-time monitoring and control from a single interface.</li>\n</ul>",
+                            "fieldCD": "JDES",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "JCTR",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "JDFM",
+                            "dateTimeValue": null
+                        }],
+                        "index": 1,
+                        "id": "6080a8ec-72c5-5fe0-c058-4b1207e68c01",
+                        "category": null
+                    }, {
+                        "docDatas": [{
+                            "charValue": "09 2021",
+                            "fieldCD": "JSTD",
+                            "dateTimeValue": "2021-09-05T07:00:00Z"
+                        }, {
+                            "charValue": "Current",
+                            "fieldCD": "EDDT",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "Look4Tutor",
+                            "fieldCD": "COMP",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "Sales Representative",
+                            "fieldCD": "JTIT",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "JCIT",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "Vancouver, BC",
+                            "fieldCD": "JLOC",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "JSTA",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "JCNT",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "<ul>\n  <li>Played an integral role in executing more than 20 event marketing initiatives, driving sales and promoting brand awareness.</li>\n  <li>Managed customer accounts to secure customer satisfaction and repeat business.</li>\n  <li>Delivered technical presentations matching audience's level of expertise to explain products and services to customers.</li>\n</ul>",
+                            "fieldCD": "JDES",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "JCTR",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "JDFM",
+                            "dateTimeValue": null
+                        }],
+                        "index": 2,
+                        "id": "bb19f54b-79b4-4cbd-b091-2fc131870eaa",
+                        "category": null
+                    }],
+                    "index": 6,
+                    "name": "WORK EXPERIENCE",
+                    "id": "ed071706-0bdb-435c-aa3e-9b6fa7953851"
+                }, {
+                    "sectionTypeCD": "EDUC",
+                    "paragraphs": [{
+                        "docDatas": [{
+                            "charValue": "Bachelor of Science",
+                            "fieldCD": "DGRE",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "Computer Science",
+                            "fieldCD": "STUY",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "University of British Columbia",
+                            "fieldCD": "SCHO",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "Vancouver, BC",
+                            "fieldCD": "SCIT",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "SSTA",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "SCNT",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "05/2025",
+                            "fieldCD": "GRYR",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "Vancouver, BC",
+                            "fieldCD": "SCLO",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "<p>Dean's Honour List</p>",
+                            "fieldCD": "FRFM",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "GRST",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "GRED",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "EDTP",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "EGRD",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "ENST",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "GDFM",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "GRHN",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "ESTS",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "GRIP",
+                            "dateTimeValue": null
+                        }, {
+                            "charValue": "",
+                            "fieldCD": "GRPA",
+                            "dateTimeValue": null
+                        }],
+                        "index": 1,
+                        "id": "1643da78-4537-5a49-00f2-8a4d1b2a8e57",
+                        "category": null
+                    }],
+                    "index": 7,
+                    "name": "Education",
+                    "id": "d18b187b-fcd8-4e01-89a6-1fb4c8e23aa8"
+                }, {
+                    "sectionTypeCD": "CUST",
+                    "paragraphs": [{
+                        "docDatas": [{
+                            "charValue": "<ul>\n  <li>Programming Languages: Java, C++, R, TypeScript/JavaScript, SQL(Oracle), PHP, HTML/CSS</li>\n  <li>Tools and Software: Git/Github, IntelliJ, Visual Studio Code, R studio, Modao, Microsoft Word/PowerPoint/Excel</li>\n  <li>Soft Skills: Problem-Solving Strengths, Teamwork Skills, UI/UX Design Skills, B2C Sales</li>\n  <li>Coursework: Data design, Algorithms, Object-oriented design and programming, Write logical and maintainable code, Effectively articulate technical challenges and solutions, Handling ambiguous or undefined problems.</li>\n</ul>",
+                            "fieldCD": "FRFM",
+                            "dateTimeValue": null
+                        }],
+                        "index": 1,
+                        "id": "c29691b9-3cfe-c007-dda6-c936b3f7861d",
+                        "category": null
+                    }],
+                    "index": 10,
+                    "name": "SKILLS",
+                    "id": "5d8f89b3-7385-65a4-20e7-897ee9725cce"
+                }, {
+                    "sectionTypeCD": "CUST",
+                    "paragraphs": [{
+                        "docDatas": [{
+                            "charValue": "<p>Bank Backend Security Management System</p>\n<p>Co-founder</p>\n<ul>\n  <li>Designed a real-time alerting and incident management system that provided immediate notifications and responses to security breaches or anomalies.</li>\n  <li>Conducted rigorous unit testing, integration testing, and continuous integration to maintain code quality and reliability.</li>\n</ul>\n<p><br></p>\n<p>Food Decision Desktop Application</p>\n<p>Creator</p>\n<ul>\n  <li>Develop and design the user interface with a focus on simplicity and intuitiveness, ensuring an engaging user experience.</li>\n  <li>Implemented rigorous testing procedures, including unit testing and integration testing, to ensure the application's reliability and robustness.</li>\n</ul>",
+                            "fieldCD": "FRFM",
+                            "dateTimeValue": null
+                        }],
+                        "index": 1,
+                        "id": "5b2c46b7-f1b8-1ebf-e532-611686442c2c",
+                        "category": null
+                    }],
+                    "index": 11,
+                    "name": "PROJECTS",
+                    "id": "d7394e73-6fca-04d9-50f9-334db46fa64b"
+                }],
+                "skinCD": "MO1L",
+                "preferences": [{
+                    "docPreferenceTypeCD": "EMBD",
+                    "value": "1"
+                }, {
+                    "docPreferenceTypeCD": "RUPL",
+                    "value": "0"
+                }, {
+                    "docPreferenceTypeCD": "RBRWZ",
+                    "value": "1"
+                }, {
+                    "docPreferenceTypeCD": "PREF",
+                    "value": "0"
+                }, {
+                    "docPreferenceTypeCD": "FGRYR",
+                    "value": "1"
+                }, {
+                    "docPreferenceTypeCD": "EXLV",
+                    "value": "student"
+                }, {
+                    "docPreferenceTypeCD": "YEXP",
+                    "value": "0 Years"
+                }, {
+                    "docPreferenceTypeCD": "EDUL",
+                    "value": "high school or ged"
+                }, {
+                    "docPreferenceTypeCD": "TWEM",
+                    "value": "42"
+                }, {
+                    "docPreferenceTypeCD": "RSRN",
+                    "value": "JRRN"
+                }, {
+                    "docPreferenceTypeCD": "STYP",
+                    "value": "J"
+                }, {
+                    "docPreferenceTypeCD": "SSTR",
+                    "value": "Sales Representative"
+                }, {
+                    "docPreferenceTypeCD": "BMJS",
+                    "value": ""
+                }],
+                "publishStatusCd": "PUBS"
+            }
+        }
+    </script><noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="static/js/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script src="static/js/tracking-v9.js" defer="" data-nscript="beforeInteractive"></script>
+    <script defer="" src="static/js/112.5cee9fe38f984eac.js"></script>
+    <script defer="" src="static/js/562.cb8bab8bb52a2842.js"></script>
+    <script src="static/js/webpack-49fabcfa36b23186.js" defer=""></script>
+    <script src="static/js/framework-6514bde62ca490d2.js" defer=""></script>
+    <script src="static/js/main-872a0122be919466.js" defer=""></script>
+    <script src="static/js/_app-3f4e6d13a3ca07bb.js" defer=""></script>
+    <script src="static/js/610-fa522b3f2cee9a7b.js" defer=""></script>
+    <script src="static/js/238-59ac4c7e64258eb7.js" defer=""></script>
+    <script src="static/js/360-a14f243f0c3b049f.js" defer=""></script>
+    <script src="static/js/361-64f532de2a6b0c80.js" defer=""></script>
+    <script src="static/js/159-af7dc1afacb92e86.js" defer=""></script>
+    <script src="static/js/753-9b3428167a69c8f8.js" defer=""></script>
+    <script src="static/js/[resumeIndex]-9c434baae154ca29.js" defer=""></script>
+    <script src="static/js/_buildManifest1.js" defer=""></script>
+    <script src="static/js/_ssgManifest1.js" defer=""></script>
+    <style data-styled="" data-styled-version="5.3.11">
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'HK Grotesk', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+            font-size: 10px;
+            line-height: 1.5;
+        }
+
+        /*!sc*/
+        body.fade-in {
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+        /*!sc*/
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            -webkit-transition: color 0.2s, background-color 0.25s, border-color 0.5s, opacity 0.25s, fill 0.15s;
+            transition: color 0.2s, background-color 0.25s, border-color 0.5s, opacity 0.25s, fill 0.15s;
+        }
+
+        /*!sc*/
+        svg,
+        img,
+        picture,
+        iframe {
+            display: block;
+        }
+
+        /*!sc*/
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 0;
+            margin-bottom: .5rem;
+        }
+
+        /*!sc*/
+        ol,
+        ul,
+        dl {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        /*!sc*/
+        button {
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        /*!sc*/
+        .modalOpen {
+            overflow: hidden;
+        }
+
+        /*!sc*/
+        .prs-logo {
+            width: 11.9rem;
+            height: 2.3rem;
+        }
+
+        /*!sc*/
+        .loading-div {
+            display: block;
+            max-width: 100%;
+            height: 1000px;
+            margin: auto;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            overflow: hidden;
+            pointer-events: none;
+            font-size: 150px;
+            line-height: 150px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            word-break: break-all;
+            text-align: center;
+            color: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:768px) {
+            .prs-logo {
+                width: 14.5rem;
+                height: 2.8rem;
+            }
+        }
+
+        /*!sc*/
+        data-styled.g1[id="sc-global-jixEWo1"] {
+            content: "sc-global-jixEWo1,"
+        }
+
+        /*!sc*/
+        .gLSWBm .nav-link:focus-visible {
+            outline: 2px solid #000;
+        }
+
+        /*!sc*/
+        .gLSWBm .navbar-dropdown .nav-link:focus-visible {
+            outline-color: #000;
+        }
+
+
+        /*!sc*/
+        .gLSWBm ul,
+        .gLSWBm li {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        /*!sc*/
+        .gLSWBm .logo a {
+            display: block;
+            position: relative;
+            width: 11.9rem;
+            height: 2.3rem;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:1023px) {
+            .gLSWBm .logo a {
+                margin-right: 3rem;
+            }
+        }
+
+        /*!sc*/
+        .gLSWBm .logo a img {
+            width: 100%;
+        }
+
+        /*!sc*/
+        .gLSWBm .hamburger {
+            display: none;
+        }
+
+        /*!sc*/
+        .gLSWBm .navbar>.nav-item {
+            margin-top: 4rem;
+            position: relative;
+        }
+
+        /*!sc*/
+        .gLSWBm .navbar>.nav-item:first-child {
+            margin-top: 0;
+        }
+
+        /*!sc*/
+        .gLSWBm .navbar-dropdown .nav-item {
+            margin-top: .5rem;
+        }
+
+        /*!sc*/
+        .gLSWBm .nav-link {
+            display: inline-block;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: #00012e;
+            font-weight: 500;
+            -webkit-transition: font-weight .1s linear;
+            transition: font-weight .1s linear;
+        }
+
+        /*!sc*/
+        .gLSWBm .nav-link:before {
+            content: attr(data-text);
+            content: attr(data-text) / "";
+            height: 0;
+            visibility: hidden;
+            overflow: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            pointer-events: none;
+            font-weight: 700;
+            display: block;
+        }
+
+        /*!sc*/
+        .gLSWBm .nav-item:hover>.nav-link {
+            font-weight: 700;
+        }
+
+        /*!sc*/
+        .gLSWBm .navbar-dropdown .nav-link {
+            display: block;
+            font-weight: 400;
+            padding: 1rem 2rem;
+            background-color: transparent;
+            -webkit-transition: font-weight, background-color, color .2s linear;
+            transition: font-weight, background-color, color .2s linear;
+        }
+
+        /*!sc*/
+        .gLSWBm .navbar-dropdown .nav-item:hover .nav-link,
+        .gLSWBm .navbar-dropdown .nav-item.active .nav-link {
+            background-color: #f6f5ff;
+            color: #03066f;
+            font-weight: 700;
+        }
+
+        /*!sc*/
+        .gLSWBm .header-btn {
+            display: block;
+            max-width: 30rem;
+            width: 100%;
+            height: 4rem;
+            overflow: hidden;
+            margin: 4rem auto 0;
+            border: .1rem solid #5638ff;
+            background: #5638ff;
+            color: #fff;
+            -webkit-text-fill-color: #fff;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            font-weight: 600;
+            padding: .8rem 1.5rem;
+            border-radius: 1.8rem;
+            -webkit-transition: background-color, color .1s linear;
+            transition: background-color, color .1s linear;
+            cursor: pointer;
+        }
+
+        /*!sc*/
+        .gLSWBm .header-btn:hover {
+            background-color: #5638ff;
+            color: #fff;
+        }
+
+        /*!sc*/
+        .gLSWBm .nav-arrow {
+            display: inline-block;
+            position: absolute;
+            width: .7rem;
+            height: .7rem;
+            background: transparent;
+            text-indent: -999rem;
+            border-top: .15rem solid #00012e;
+            border-left: .15rem solid #00012e;
+            -webkit-transition: all .1 ease-in-out;
+            transition: all .1 ease-in-out;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: transparent;
+            -webkit-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+            right: .1rem;
+            top: 1rem;
+        }
+
+        /*!sc*/
+        .gLSWBm .nav-tab:hover .nav-arrow {
+            border-color: #00012e;
+        }
+
+        /*!sc*/
+        .gLSWBm .nav-arrow:before {
+            display: block;
+            height: 200%;
+            width: 200%;
+            margin-left: -50%;
+            margin-top: -50%;
+            content: "";
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        /*!sc*/
+        .gLSWBm .nav-arrow.active {
+            border-width: .2rem;
+            -webkit-transform: rotate(225deg);
+            -ms-transform: rotate(225deg);
+            transform: rotate(225deg);
+        }
+
+        /*!sc*/
+        .gLSWBm .has-dropdown .nav-link {
+            display: block;
+            color: #121B60;
+        }
+
+        /*!sc*/
+        .gLSWBm .nav-tab.has-dropdown>.nav-link {
+            display: inline-block;
+            color: #121B60;
+            font-weight: 500;
+        }
+
+        /*!sc*/
+        .gLSWBm .nav-tab .nav-link svg {
+            display: inline-block;
+            width: 1.225rem;
+            margin-right: 1rem;
+            fill: #121B60;
+        }
+
+        /*!sc*/
+        .gLSWBm .nav-tab .nav-link span {
+            display: inline-block;
+            vertical-align: text-bottom;
+        }
+
+        /*!sc*/
+        .gLSWBm .nav-tab:hover>.nav-link {
+            font-weight: 500;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:768px) {
+            .gLSWBm .nav-wrapper.hide {
+                visibility: hidden;
+            }
+
+            .gLSWBm .nav-wrapper.show {
+                visibility: hidden;
+                -webkit-animation: kLosaE 0s .2s forwards;
+                animation: kLosaE 0s .2s forwards;
+            }
+
+            .gLSWBm .navigation-wrapper .inner-nav,
+            .gLSWBm .navigation .navbar {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            .gLSWBm .navbar>.nav-item {
+                margin-top: 0;
+                margin-right: 2rem;
+                padding: 1.8rem 0;
+                cursor: pointer;
+            }
+
+            .gLSWBm .navbar>.nav-item:last-child {
+                margin-right: 0;
+            }
+
+            .gLSWBm .navbar-dropdown {
+                position: absolute;
+                z-index: 30;
+                right: 0;
+                top: -999rem;
+                margin-top: 6rem;
+                width: 23rem;
+                border-radius: .6rem;
+                box-shadow: 0 .2rem 1rem 0 rgba(0, 1, 46, .25);
+                border: .05rem solid #888daf;
+                background: #fff;
+                padding: .5rem .5rem 1rem;
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                -webkit-transition: opacity .2s linear;
+                transition: opacity .2s linear;
+            }
+
+            .gLSWBm .navbar>.nav-item:hover .navbar-dropdown,
+            .gLSWBm .navbar-dropdown.active,
+            .gLSWBm .navbar-dropdown.open {
+                opacity: 1;
+                visibility: visible;
+                top: 0;
+                pointer-events: all;
+                margin-top: 6rem;
+            }
+
+            .gLSWBm .header-btn {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                margin: 0;
+                line-height: 1.6rem;
+                padding: 1.1rem;
+                background-color: transparent;
+                color: #5638ff;
+                -webkit-text-fill-color: #5638ff;
+                width: 20rem;
+                border-radius: 2rem;
+                margin-left: 2rem;
+            }
+
+            .gLSWBm .header-btn:hover {
+                color: #fff;
+                -webkit-text-fill-color: #fff;
+                background-color: #5638ff;
+            }
+
+            .gLSWBm .navbar>.nav-item:before {
+                content: '';
+                width: 100%;
+                height: .3rem;
+                background-color: #ee6c67;
+                position: absolute;
+                left: 0;
+                bottom: 1rem;
+                opacity: 0;
+                visibility: hidden;
+                -webkit-transition: opacity .1s linear;
+                transition: opacity .1s linear;
+            }
+
+            .gLSWBm .navbar>.nav-item:hover:before {
+                opacity: 1;
+                visibility: visible;
+                -webkit-transition: opacity .2s linear;
+                transition: opacity .2s linear;
+            }
+
+            .gLSWBm .nav-link {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            }
+
+            .gLSWBm .navbar-dropdown .nav-link {
+                padding: .5rem 1.5rem;
+            }
+
+            .gLSWBm .nav-item.has-dropdown .nav-link {
+                position: relative;
+                padding-right: 1.8rem;
+            }
+
+            .gLSWBm .nav-arrow {
+                -webkit-transform: rotate(225deg);
+                -ms-transform: rotate(225deg);
+                transform: rotate(225deg);
+                top: .7rem;
+                border-width: .2rem;
+            }
+
+            .gLSWBm .nav-item.has-dropdown:hover .nav-arrow,
+            .gLSWBm .nav-arrow.active {
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                top: 1rem;
+            }
+
+            .gLSWBm .navbar>.nav-item:hover .navbar-dropdown,
+            .gLSWBm .has-dropdown.open .navbar-dropdown {
+                opacity: 1;
+                visibility: visible;
+                top: 0;
+                pointer-events: all;
+            }
+
+            .gLSWBm .navbar>.nav-item:hover .nav-arrow,
+            .gLSWBm .has-dropdown.open .nav-arrow {
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                top: 1rem;
+            }
+
+            .gLSWBm .navbar>.nav-tab {
+                padding: 1.3rem 0;
+            }
+
+            .gLSWBm .navbar>.nav-tab>.nav-link {
+                padding: .5rem 1rem;
+                margin-left: 1.5rem;
+                border-radius: 2.5rem;
+            }
+
+            .gLSWBm .navbar>.nav-tab:hover>.nav-link {
+                background: #F6F5FF;
+                color: #121B60;
+            }
+
+            .gLSWBm .navbar>.nav-tab:hover>.nav-link svg {
+                fill: #121B60;
+            }
+
+            .gLSWBm .navbar>.nav-tab:before {
+                content: none;
+            }
+
+            .gLSWBm .navbar>.nav-tab.has-dropdown>.nav-link {
+                padding-right: 2.5rem;
+            }
+
+            .gLSWBm .nav-tab.has-dropdown .nav-arrow {
+                top: 1.1rem;
+                right: 1rem;
+            }
+
+            .gLSWBm .nav-tab.has-dropdown:hover .nav-arrow,
+            .gLSWBm .nav-tab.has-dropdown.open .nav-arrow {
+                top: 1.45rem;
+            }
+
+            .gLSWBm .employer-nav .navbar>.nav-tab {
+                margin-right: 0.2rem;
+            }
+
+            .gLSWBm .nav-tab .navbar-dropdown {
+                width: 15rem;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:1023px) {
+            .gLSWBm .navbar>.nav-item {
+                margin-right: 3rem;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:1139px) {
+            .gLSWBm .logo a {
+                width: 14.5rem;
+            }
+
+            .gLSWBm .nav-link {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+
+            .gLSWBm .navbar>.nav-tab>.nav-link {
+                padding: .8rem 2rem;
+            }
+
+            .gLSWBm .navbar>.nav-tab:after {
+                top: 2.3rem;
+            }
+
+            .gLSWBm .nav-tab.has-dropdown .nav-arrow {
+                top: 1.6rem;
+                right: 1rem;
+            }
+
+            .gLSWBm .nav-tab.has-dropdown:hover .nav-arrow,
+            .gLSWBm .nav-tab.has-dropdown.open .nav-arrow {
+                top: 1.9rem;
+            }
+
+            .gLSWBm .nav-tab .navbar-dropdown {
+                width: 16.5rem;
+            }
+        }
+
+        /*!sc*/
+        data-styled.g2[id="sc-6543mj-0"] {
+            content: "gLSWBm,"
+        }
+
+        /*!sc*/
+        .tNXKD {
+            position: relative;
+            padding: 2em;
+            background-color: #000;
+            z-index: 5;
+        }
+
+        /*!sc*/
+        .tNXKD.hideprimaryfooter {
+            display: none;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .tNXKD {
+                padding: 2em 0;
+            }
+        }
+
+        /*!sc*/
+        .tNXKD .container {
+            position: relative;
+            max-width: 115em;
+            padding: 0 1em;
+            margin: 0 auto;
+            z-index: 5;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:1199px) {
+            .tNXKD .container {
+                padding: 0 2em;
+                text-align: left;
+            }
+        }
+
+        /*!sc*/
+        .tNXKD .name {
+            padding-right: 2em;
+            border-right: 0.1em solid rgba(155, 155, 155, 0.3);
+            color: #fff;
+            font-size: 1.4em;
+            vertical-align: middle;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .tNXKD .name {
+                padding-right: 0;
+                border-right: none;
+                font-size: 2.2em;
+            }
+        }
+
+        /*!sc*/
+        .tNXKD .job {
+            display: inline-block;
+            padding-right: 2em;
+            border-right: 0.15em solid rgba(155, 155, 155, 0.3);
+            margin-left: 2em;
+            color: #fff;
+            font-size: 1.4em;
+            vertical-align: middle;
+            max-width: 30em;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .tNXKD .job {
+                padding-right: 0;
+                border-right: none;
+                margin: 0.5em 0 1em;
+                font-size: 1.8em;
+            }
+        }
+
+        /*!sc*/
+        .tNXKD .contactBtnFooter {
+            padding-left: 2em;
+            border: none;
+            background: transparent;
+            color: #fff;
+            font-size: 1.4em;
+            vertical-align: middle;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        /*!sc*/
+        .tNXKD .contactBtnFooter:hover span {
+            -webkit-text-decoration: underline;
+            text-decoration: underline;
+        }
+
+        /*!sc*/
+        .tNXKD .contactBtnFooter svg {
+            margin-right: 0.5em;
+        }
+
+        /*!sc*/
+        .tNXKD .contactBtnFooter svg path {
+            fill: #fff;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .tNXKD .contactBtnFooter {
+                display: -webkit-inline-box;
+                display: -webkit-inline-flex;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                padding: 1em 0;
+                border-top: 0.15em solid rgba(155, 155, 155, 0.3);
+                border-bottom: 0.15em solid rgba(155, 155, 155, 0.3);
+            }
+        }
+
+        /*!sc*/
+        .tNXKD .footerRight {
+            color: #fff;
+            font-size: 1.4em;
+        }
+
+        /*!sc*/
+        .tNXKD .footerRight button {
+            border: none;
+            background: transparent;
+            color: #fff;
+            -webkit-text-decoration: underline;
+            text-decoration: underline;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .tNXKD .footerRight {
+                margin-top: 1em;
+            }
+        }
+
+        /*!sc*/
+        .tNXKD .flex {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .tNXKD .flex {
+                display: block;
+            }
+        }
+
+        /*!sc*/
+        .tNXKD .footerBtns {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: flex-start;
+            -webkit-box-align: flex-start;
+            -ms-flex-align: flex-start;
+            align-items: flex-start;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .tNXKD .footerBtns {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+
+        /*!sc*/
+        data-styled.g4[id="sc-1k8xofi-0"] {
+            content: "tNXKD,"
+        }
+
+        /*!sc*/
+        .eQwKfl .footer {
+            position: relative;
+            background-color: #000819;
+            color: #fff;
+            font-family: "IBM Plex Sans";
+            z-index: 5;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .container {
+            margin: auto;
+            width: 100%;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            -webkit-align-items: start;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: start;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main>*+* {
+            margin-top: 3rem;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main a {
+            color: #f4f3f8;
+            display: block;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            font-size: 1.4rem;
+            line-height: 4rem;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main a:hover,
+        .eQwKfl .footer .footer-main a:focus-visible {
+            -webkit-text-decoration: underline;
+            text-decoration: underline;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .block {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .block .block-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .block .block-body-column {
+            -webkit-column-count: 2;
+            column-count: 2;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .search_by {
+            grid-column: 1/4;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .main {
+            grid-column: 5/9;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .main .my-info a {
+            line-height: 2.2rem;
+            margin-top: .8rem;
+            max-width: 14rem;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .follow_us {
+            grid-column: 10/13;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .follow_us a {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .follow_us a svg {
+            height: 1.4rem;
+            width: 1.4rem;
+            display: inline-block;
+            margin-right: .8rem;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .job-titles {
+            grid-column: 1/-1;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .job-titles .title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        /*!sc*/
+        @media screen and (min-width:1063px) {
+            .eQwKfl .footer .footer-main .job-titles .title {
+                width: 7.2rem;
+                word-break: break-word;
+            }
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .job-titles .body ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .job-titles a {
+            text-transform: uppercase;
+            display: inline-block;
+            height: 4rem;
+            width: 4rem;
+            font-size: 2rem;
+            line-height: 2.2rem;
+            font-weight: 500;
+            border: .1rem solid #fff;
+            border-radius: .95rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin: 0;
+            margin-top: 4rem;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-main .job-titles a:hover,
+        .eQwKfl .footer .footer-main .job-titles a:focus-visible {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            background: #fff;
+            color: #00012e;
+            font-weight: 700;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-copyright {
+            grid-column: 1/-1;
+            padding: 2rem 0;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            border-top: .1rem solid #7f8096;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-copyright .logo a {
+            display: block;
+            position: relative;
+            width: 7.8rem;
+            height: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-copyright .logo img {
+            font-size: .8rem;
+            width: 100%;
+        }
+
+        /*!sc*/
+        .eQwKfl .footer .footer-copyright .copyright {
+            color: #f4f3f8;
+            font-size: 1rem;
+            line-height: 1.6rem;
+        }
+
+        /*!sc*/
+        @media screen and (max-width:359px) {
+            .eQwKfl .footer .footer-copyright {
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-align-items: flex-start;
+                -webkit-box-align: flex-start;
+                -ms-flex-align: flex-start;
+                align-items: flex-start;
+            }
+
+            .eQwKfl .footer .footer-copyright .copyright {
+                margin-top: 1rem;
+            }
+        }
+
+        /*!sc*/
+        @media screen and (min-width:768px) {
+            .eQwKfl .footer .container {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                -webkit-column-gap: 3rem;
+                column-gap: 3rem;
+                max-width: 117rem;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+            .eQwKfl .footer .footer-main>*+* {
+                margin-top: 0;
+            }
+
+            .eQwKfl .footer .footer-main a {
+                line-height: 3.6rem;
+            }
+
+            .eQwKfl .footer .footer-main .main .my-info a {
+                max-width: 12rem;
+            }
+
+            .eQwKfl .footer .footer-main .job-titles {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                margin-top: 6rem;
+            }
+
+            .eQwKfl .footer .footer-main .job-titles .title {
+                margin: 0;
+                margin-right: 1.4rem;
+                font-size: 1.2rem;
+                line-height: 1.3rem;
+                font-weight: 500;
+            }
+
+            .eQwKfl .footer .footer-main .job-titles .body ul {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+
+            .eQwKfl .footer .footer-main .job-titles .body ul li {
+                margin-top: 2rem;
+            }
+
+            .eQwKfl .footer .footer-main .job-titles .body ul li:not(:last-child) {
+                margin-right: 1.4rem;
+            }
+
+            .eQwKfl .footer .footer-main .job-titles a {
+                height: 2.6rem;
+                width: 2.6rem;
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                border-radius: .6rem;
+                margin: 0;
+            }
+
+            .eQwKfl .footer .footer-copyright .copyright {
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+            }
+
+            .eQwKfl .footer .footer-copyright .logo a {
+                width: 10.4rem;
+                height: 2rem;
+            }
+        }
+
+        /*!sc*/
+        @media screen and (min-width:1024px) {
+            .eQwKfl .footer .footer-main .block .block-page-links {
+                -webkit-column-count: 3;
+                column-count: 3;
+            }
+        }
+
+        /*!sc*/
+        @media screen and (min-width:1140px) {
+            .eQwKfl .footer .footer-main .job-titles {
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+
+            .eQwKfl .footer .footer-main .job-titles .body ul {
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+
+            .eQwKfl .footer .footer-main .job-titles .body ul li {
+                margin-top: 0;
+            }
+        }
+
+        /*!sc*/
+        data-styled.g5[id="sc-1jwebaw-0"] {
+            content: "eQwKfl,"
+        }
+
+        /*!sc*/
+        .mrFGH.isSampleUrl {
+            top: 16.6rem;
+        }
+
+        /*!sc*/
+        data-styled.g25[id="sc-slwd9s-0"] {
+            content: "mrFGH,"
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:1399px) and (min-width:769px) {
+            .bZsbQD .user-item {
+                margin: 0 !important;
+            }
+
+            .bZsbQD .user-details {
+                min-height: 9.8rem !important;
+                position: relative;
+            }
+
+            .bZsbQD .user-wrapper-heading {
+                font-size: 3.2rem !important;
+            }
+
+            .bZsbQD .user-name.text-trancate {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .bZsbQD .user-name.text-trancate:hover .tool-tip {
+                display: block !important;
+                position: absolute;
+                top: 3.4rem;
+                left: 50%;
+                width: 100%;
+                white-space: pre-wrap;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                font-size: 1rem;
+                font-weight: 400;
+                border: 0.1rem solid #888daf;
+                z-index: 10;
+                background: rgb(255, 255, 255);
+                color: #00012E;
+                box-shadow: rgba(0, 1, 46, 0.2) 0px 2px 4px 0px;
+                line-height: 2rem;
+                padding: 0.3rem 1rem;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+
+            .bZsbQD .user-name.text-trancate:hover .tool-tip:before {
+                content: '';
+                position: absolute;
+                top: -0.2rem;
+                left: 50%;
+                width: 1rem;
+                z-index: 11;
+                height: 1rem;
+                background: rgb(255, 255, 255);
+                -webkit-transform: rotate(45deg) translateX(-50%);
+                -ms-transform: rotate(45deg) translateX(-50%);
+                transform: rotate(45deg) translateX(-50%);
+                border-left: 0.1rem solid #888daf;
+                border-top: 0.1rem solid #888daf;
+            }
+
+            .bZsbQD .user-degination {
+                min-height: unset !important;
+                padding-bottom: 0 !important;
+            }
+
+            .bZsbQD .user-degination.text-trancate {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .bZsbQD .user-degination.text-trancate:hover .tool-tip {
+                display: block !important;
+                position: absolute;
+                top: 8.7rem;
+                left: 50%;
+                width: 100%;
+                white-space: pre-wrap;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                font-size: 1rem;
+                font-weight: 400;
+                border: 0.1rem solid #888daf;
+                z-index: 10;
+                background: rgb(255, 255, 255);
+                color: #00012E;
+                box-shadow: rgba(0, 1, 46, 0.2) 0px 2px 4px 0px;
+                line-height: 2rem;
+                padding: 0.3rem 1rem;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+
+            .bZsbQD .user-degination.text-trancate:hover .tool-tip:before {
+                content: '';
+                position: absolute;
+                top: -0.2rem;
+                left: 50%;
+                width: 1rem;
+                z-index: 11;
+                height: 1rem;
+                background: rgb(255, 255, 255);
+                -webkit-transform: rotate(45deg) translateX(-50%);
+                -ms-transform: rotate(45deg) translateX(-50%);
+                transform: rotate(45deg) translateX(-50%);
+                border-left: 0.1rem solid #888daf;
+                border-top: 0.1rem solid #888daf;
+            }
+        }
+
+        /*!sc*/
+        data-styled.g26[id="sc-5cfd0j-0"] {
+            content: "bZsbQD,"
+        }
+
+        /*!sc*/
+        .dnvdqA {
+            overflow-x: hidden;
+            min-height: initial;
+        }
+
+        /*!sc*/
+        .dnvdqA .skinWrapperAdditional {
+            display: none;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:1920px) {
+            .dnvdqA .skinWrapperAdditional {
+                display: none;
+            }
+        }
+
+        /*!sc*/
+        data-styled.g30[id="sc-74v6bg-0"] {
+            content: "dnvdqA,"
+        }
+
+        /*!sc*/
+        .bpicoW .sectionWrapper {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            overflow: hidden;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-top: 3em;
+            padding-bottom: 3em;
+            background-color: #f7f8fa;
+            word-wrap: break-word;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .bpicoW .sectionWrapper {
+                padding-top: 4.5em;
+                padding-bottom: 4.5em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .bpicoW .sectionWrapper {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        /*!sc*/
+        .bpicoW .sectionWrapper:not(.isEven) .bg {
+            right: 0;
+            -webkit-filter: FlipH;
+            filter: FlipH;
+            -webkit-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+
+        /*!sc*/
+        .bpicoW .bg {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            overflow: hidden;
+            width: 18%;
+            max-height: 140em;
+            background-position: top center;
+            background-size: cover;
+            opacity: 0.6;
+        }
+
+        /*!sc*/
+        .bpicoW .bg::before {
+            position: absolute;
+            top: 0;
+            right: -0.1em;
+            bottom: 0;
+            left: 50%;
+            background: linear-gradient(90deg, #f7f8fa00 0%, #f7f8faff 100%);
+            content: "";
+        }
+
+        /*!sc*/
+        .bpicoW .bg::after {
+            position: absolute;
+            top: calc(140em - 30%);
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(180deg, #f7f8fa00 0%, #f7f8faff 100%);
+            content: "";
+        }
+
+        /*!sc*/
+        .bpicoW .main {
+            position: relative;
+            width: 114em;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .bpicoW .main {
+                padding-right: 3em;
+                padding-left: 3em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .bpicoW .main {
+                padding-right: 7em;
+                padding-left: 7em;
+            }
+        }
+
+        /*!sc*/
+        data-styled.g74[id="sc-1hgt4gk-0"] {
+            content: "bpicoW,"
+        }
+
+        /*!sc*/
+        .dVteTX .container {
+            max-width: 114em;
+            padding: 0 1.5em;
+            margin: 0 auto;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .container {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: row-reverse;
+                -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+                -webkit-align-items: flex-start;
+                -webkit-box-align: flex-start;
+                -ms-flex-align: flex-start;
+                align-items: flex-start;
+                padding-top: 5em;
+                padding-bottom: 5em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) and (max-width:1199px) {
+            .dVteTX .container {
+                max-width: 96em;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .profilePhotoWrapper {
+            width: 25em;
+            margin: 0 auto;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .profilePhotoWrapper {
+                margin-bottom: 3.4em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .isPhoto .profilePhotoWrapper {
+                padding-top: 3rem;
+                margin: 0 auto;
+                margin-bottom: 3.4em;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .profilePhoto {
+            position: relative;
+            width: 25em;
+            height: 25em;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .profilePhoto img {
+                width: 100%;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .profilePhoto img {
+                max-width: 100%;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .content {
+                -webkit-flex: 1 1 0;
+                -ms-flex: 1 1 0;
+                flex: 1 1 0;
+                margin-right: 20em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .container:not(.isQuotation) .content {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .userData {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .container:not(.isPhoto) .userData {
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .isPhoto .userData {
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .name {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .name {
+                margin-top: 0;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .name {
+                font-size: 6em;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .moreInfoWrapper {
+            margin-top: 1em;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .moreInfoWrapper {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .moreInfoItem {
+            font-size: 1.4em;
+            line-height: 1.9;
+            text-transform: uppercase;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .moreInfoItem:not(:last-child) {
+                margin-right: 3.2em;
+                max-width: 50%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .moreInfoItem:not(:last-child) {
+                max-width: 100%;
+                margin-bottom: 0.6em;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .moreInfoItem svg {
+            color: #3983fa;
+            margin: 0.2em 0.8em 0 0;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .moreInfoItem svg {
+                margin: -0.2em 0.8em 0 0;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .moreInfoItem:last-of-type {
+                position: relative;
+                padding-left: 2em;
+            }
+
+            .dVteTX .moreInfoItem:last-of-type svg {
+                position: absolute;
+                left: 0;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .city {
+            margin-left: -0.2em;
+        }
+
+        /*!sc*/
+        .dVteTX .county {
+            padding-left: 1em;
+            margin-left: -0.2em;
+        }
+
+        /*!sc*/
+        .dVteTX .tooltip {
+            position: absolute;
+            z-index: 1;
+            right: -11em;
+            bottom: 123%;
+            width: 29em;
+            padding: 1em;
+            font-size: 2.2em;
+            line-height: 1.6em;
+            opacity: 0;
+            text-align: left;
+            color: #fff;
+            background-color: #65646b;
+            visibility: hidden;
+        }
+
+        /*!sc*/
+        .dVteTX .tooltip::before {
+            position: absolute;
+            bottom: -0.5em;
+            left: calc(50% - 1em);
+            display: block;
+            width: 0;
+            height: 0;
+            border-top-width: 0.6em;
+            border-top-style: solid;
+            border-top-color: #65646b;
+            border-right: 0.6em solid transparent;
+            border-left: 0.6em solid transparent;
+            content: "";
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .tooltip {
+                right: auto;
+                bottom: -12.5em;
+                left: auto;
+                width: 28em;
+                margin: auto;
+                font-size: 1.6em;
+            }
+
+            .dVteTX .tooltip::before {
+                right: 0;
+                left: 0;
+                margin: auto;
+                bottom: auto;
+                top: -0.6em;
+                border-bottom-width: 0.6em;
+                border-bottom-style: solid;
+                border-top: none;
+                border-color: #65646b;
+                border-right: 0.6em solid transparent;
+                border-left: 0.6em solid transparent;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .tooltipSampleUrl {
+            width: 20em;
+            font-size: 1.2em;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .tooltipSampleUrl {
+                font-size: 1.3em;
+            }
+        }
+
+        /*!sc*/
+        *:not(:hover)>.sc-1erbmoa-0 .tooltipSampleUrl {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        /*!sc*/
+        .dVteTX .buttonWrapper {
+            position: relative;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .buttonWrapper {
+                margin-top: 4em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .buttonWrapper {
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                text-align: center;
+                right: 0;
+                left: 0;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .buttonWrapper:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /*!sc*/
+        .dVteTX .buttonWrapper:hover .tooltipSampleUrl {
+            right: unset;
+            bottom: 100%;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .isQuotation .buttonWrapper {
+                margin-top: 2em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .isPhoto .buttonWrapper {
+                position: static;
+                display: block;
+                margin: 1em 0;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .contactButton {
+            display: inline-block;
+            padding: 0.2em 2em 0;
+            border: 0;
+            border-radius: 3.2em;
+            cursor: pointer;
+            font-family: "HK Grotesk", sans-serif;
+            font-size: 1.6em;
+            font-weight: 600;
+            line-height: 2.4;
+            -webkit-text-decoration: none !important;
+            text-decoration: none !important;
+            text-transform: uppercase;
+            background-color: #e44747;
+            color: #fff;
+        }
+
+        /*!sc*/
+        .dVteTX .contactButton:hover {
+            background-color: #e96c6c;
+            color: #fff;
+        }
+
+        /*!sc*/
+        .dVteTX .contactButton[disabled] {
+            cursor: not-allowed;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .container:not(.isPhoto) .contactButton {
+                width: 100%;
+                max-width: 20em;
+                margin-top: 1em;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .contactButtonIco {
+            margin: -0.2em 0.8em 0 0;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .container:not(.isPhoto) .secondWrapper {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column-reverse;
+                -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .quotes {
+            position: relative;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .quotes {
+                margin-top: 6em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .quotes {
+                margin-top: 4em;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .quotesIco {
+            position: absolute;
+            top: -2em;
+            right: 0;
+            color: #ebf0f5;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .dVteTX .quotesIco {
+                top: -3em;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .quotesText {
+            position: relative;
+            min-height: 2.4em;
+            padding-right: 2em;
+            margin: 0.6em auto 0;
+            font-size: 2em;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .dVteTX .quotesText {
+                padding-right: 5em;
+            }
+        }
+
+        /*!sc*/
+        .dVteTX .quotesAuthor {
+            margin-top: 2.4em;
+            font-size: 1.4em;
+            text-align: right;
+            color: #9fa5b4;
+        }
+
+        /*!sc*/
+        data-styled.g75[id="sc-1erbmoa-0"] {
+            content: "dVteTX,"
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .gDMbay {
+                margin: 1.5em -3em 2.4em;
+            }
+        }
+
+        /*!sc*/
+        .gDMbay .secName {
+            font-size: 6.2em;
+            font-weight: 500;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            line-height: 0.82;
+            word-wrap: break-word;
+            color: #9fa5b4;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .gDMbay .secName {
+                margin-bottom: 0.5em;
+                font-size: 8em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .gDMbay .secName {
+                padding: 2rem 0 1.5rem;
+            }
+        }
+
+        /*!sc*/
+        data-styled.g76[id="sc-1jg9iwz-0"] {
+            content: "gDMbay,"
+        }
+
+        /*!sc*/
+        .cjZpEm .box {
+            padding: 3em;
+            border-width: 0.1em;
+            border-style: solid;
+            border-radius: 0.4em;
+            background-color: #fff;
+            border-color: #d9e6f1;
+        }
+
+        /*!sc*/
+        data-styled.g77[id="sc-11lky2b-0"] {
+            content: "cjZpEm,"
+        }
+
+        /*!sc*/
+        .gifNsU .iconWrapper {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 3.9em;
+            height: 3.9em;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #e4f0fe;
+            color: #3983fa;
+        }
+
+        /*!sc*/
+        data-styled.g78[id="sc-ld2cos-0"] {
+            content: "gifNsU,"
+        }
+
+        /*!sc*/
+        .cozkpF .titleWrapper {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        /*!sc*/
+        .cozkpF .title {
+            margin: 0 0 0 1em;
+            font-size: 1.6em;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        /*!sc*/
+        .cozkpF .company {
+            margin-top: 0.5em;
+            font-size: 1.6em;
+        }
+
+        /*!sc*/
+        .cozkpF .location {
+            margin-top: 0.2em;
+            font-size: 1.6em;
+        }
+
+        /*!sc*/
+        .cozkpF .date {
+            margin-top: 1em;
+            font-size: 1.6em;
+            color: #9fa5b4;
+        }
+
+        /*!sc*/
+        .cozkpF .ukdate {
+            margin-top: 0.2em;
+        }
+
+        /*!sc*/
+        data-styled.g79[id="sc-sc2xgz-0"] {
+            content: "cozkpF,"
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .goJyaE {
+                padding-top: 4em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .goJyaE .sectionName {
+                margin-top: 5em;
+            }
+
+            .goJyaE .sectionName.isEven {
+                text-align: left;
+            }
+
+            .sc-1tpg14y-0 .list:not(.isEven) .sc-1tpg14y-0 .list {
+                padding-right: 28em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .goJyaE .wrapperItem {
+                max-width: 74em;
+            }
+        }
+
+        /*!sc*/
+        .goJyaE .wrapperItem:not(:last-child) {
+            margin-bottom: 3em;
+        }
+
+        /*!sc*/
+        .goJyaE .des {
+            margin-top: 2em;
+        }
+
+        /*!sc*/
+        .goJyaE .desContent {
+            font-size: 1.6em;
+        }
+
+        /*!sc*/
+        .goJyaE .toggleDesBtn {
+            padding: 0;
+            border: 0;
+            margin-top: 0.6em;
+            background: none;
+            font-size: 1.8em;
+            font-weight: 600;
+            -webkit-text-decoration: underline;
+            text-decoration: underline;
+            color: #3983fa;
+        }
+
+        /*!sc*/
+        data-styled.g80[id="sc-1tpg14y-0"] {
+            content: "goJyaE,"
+        }
+
+        /*!sc*/
+        .duDhDs .titleWrapper {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-bottom: 0.8em;
+        }
+
+        /*!sc*/
+        .duDhDs .title {
+            margin: 0 0 0 1em;
+            font-size: 1.6em;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        /*!sc*/
+        .duDhDs .school {
+            margin-bottom: 1em;
+            font-size: 1.6em;
+        }
+
+        /*!sc*/
+        .duDhDs .ukschool {
+            margin-bottom: 0.2em;
+        }
+
+        /*!sc*/
+        .duDhDs .edulocation {
+            margin-bottom: 0.2em;
+        }
+
+        /*!sc*/
+        .duDhDs .date {
+            margin-bottom: 0.5em;
+            font-size: 1.6em;
+            color: #9fa5b4;
+        }
+
+        /*!sc*/
+        data-styled.g81[id="sc-x3p0ih-0"] {
+            content: "duDhDs,"
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .huTTCg .sectionName {
+                margin-top: 5em;
+            }
+
+            .huTTCg .sectionName.isEven {
+                text-align: left;
+            }
+
+            .huTTCg .list:not(.isEven) {
+                padding-right: 28em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .huTTCg .wrapperItem {
+                max-width: 74em;
+            }
+        }
+
+        /*!sc*/
+        .huTTCg .wrapperItem:not(:first-child) {
+            margin-top: 3em;
+        }
+
+        /*!sc*/
+        .huTTCg .des {
+            margin-top: 2em;
+        }
+
+        /*!sc*/
+        .huTTCg .desContent {
+            font-size: 1.6em;
+        }
+
+        /*!sc*/
+        .huTTCg .toggleDesBtn {
+            padding: 0;
+            border: 0;
+            margin-top: 0.6em;
+            background: none;
+            font-size: 1.8em;
+            font-weight: 600;
+            -webkit-text-decoration: underline;
+            text-decoration: underline;
+            color: #3983fa;
+        }
+
+        /*!sc*/
+        data-styled.g82[id="sc-1eqp4f3-0"] {
+            content: "huTTCg,"
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .gkbDHW .wrapper {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column-reverse;
+                -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+            }
+
+            .gkbDHW .wrapper:not(.isEven) {
+                margin-right: 16em;
+            }
+
+            .gkbDHW .wrapper.isEven {
+                margin-right: 16em;
+            }
+        }
+
+        /*!sc*/
+        .gkbDHW .content {
+            font-size: 2em;
+            line-height: 1.4;
+        }
+
+        /*!sc*/
+        .gkbDHW .content p {
+            margin-top: 0;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .gkbDHW .content {
+                width: 100%;
+                margin-bottom: 4em;
+            }
+        }
+
+        /*!sc*/
+        .gkbDHW .skills-list {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -16rem;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:1199px) {
+            .gkbDHW .skills-list {
+                margin-right: 0rem;
+            }
+        }
+
+        /*!sc*/
+        .gkbDHW .skills-list ul {
+            line-height: 2.7rem;
+            display: contents;
+        }
+
+        /*!sc*/
+        .gkbDHW .skills-list ul li {
+            position: relative;
+            overflow: hidden;
+            width: 50%;
+            min-height: 1.3rem;
+            max-height: 6.4rem;
+            padding: 0.25em 1em 0.25em 1.5em;
+            border-radius: 0.8em;
+            cursor: default;
+            list-style: none;
+            text-overflow: ellipsis;
+            -webkit-transition: width 1s ease;
+            transition: width 1s ease;
+            word-break: break-word;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:767px) {
+            .gkbDHW .skills-list ul li {
+                width: 100%;
+            }
+        }
+
+        /*!sc*/
+        .gkbDHW .skills-list ul li::before {
+            content: "";
+            margin-left: -1.3em;
+            position: absolute;
+            top: 0.5em;
+            left: 2.7rem;
+            width: 0.7em;
+            height: 0.7em;
+            border-width: 0.22em;
+            border-style: solid;
+            border-color: #3983fa;
+            border-radius: 50%;
+        }
+
+        /*!sc*/
+        .gkbDHW .skills-list ul li:hover {
+            width: 50%;
+            max-height: -webkit-fit-content;
+            max-height: -moz-fit-content;
+            max-height: fit-content;
+            text-overflow: clip;
+            white-space: pre-wrap;
+            -webkit-line-clamp: unset;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:767px) {
+            .gkbDHW .skills-list ul li:hover {
+                width: 100%;
+            }
+        }
+
+        /*!sc*/
+        .gkbDHW .skills-list p {
+            position: relative;
+            overflow: hidden;
+            width: 50%;
+            min-height: 1.3rem;
+            max-height: 6.4rem;
+            padding: 0.25em 1em 0em 1.5em;
+            border-radius: 0.8em;
+            cursor: default;
+            text-overflow: ellipsis;
+            -webkit-transition: width 1s ease;
+            transition: width 1s ease;
+            word-break: break-word;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:767px) {
+            .gkbDHW .skills-list p {
+                width: 100%;
+            }
+        }
+
+        /*!sc*/
+        .gkbDHW .skills-list p::before {
+            content: "";
+            margin-left: -1.3em;
+            position: absolute;
+            top: 0.5em;
+            left: 2.7rem;
+            width: 0.7em;
+            height: 0.7em;
+            border-width: 0.22em;
+            border-style: solid;
+            border-color: #3983fa;
+            border-radius: 50%;
+        }
+
+        /*!sc*/
+        .gkbDHW .skills-list p:hover {
+            width: 50%;
+            max-height: -webkit-fit-content;
+            max-height: -moz-fit-content;
+            max-height: fit-content;
+            text-overflow: clip;
+            white-space: pre-wrap;
+            -webkit-line-clamp: unset;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:767px) {
+            .gkbDHW .skills-list p:hover {
+                width: 100%;
+            }
+        }
+
+        /*!sc*/
+        data-styled.g83[id="sc-isk5vx-0"] {
+            content: "gkbDHW,"
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .iWzVbA .wrapper {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column-reverse;
+                -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .iWzVbA .list {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                padding-right: 6em;
+            }
+        }
+
+        /*!sc*/
+        .iWzVbA .wrapperItem {
+            position: relative;
+            overflow: hidden;
+            margin-top: 2em;
+        }
+
+        /*!sc*/
+        .iWzVbA .wrapperItem:nth-child(4n-1),
+        .iWzVbA .wrapperItem:nth-child(4n) {
+            left: 8em;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+
+            .iWzVbA .wrapperItem:nth-child(4n-1),
+            .iWzVbA .wrapperItem:nth-child(4n) {
+                left: 0;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .iWzVbA .wrapperItem {
+                width: calc(50% - 1.6em);
+            }
+        }
+
+        /*!sc*/
+        .iWzVbA .number {
+            margin-top: 0.1em;
+            font-size: 9.6em;
+            font-weight: 600;
+            color: #5b6a9a;
+            z-index: 1;
+        }
+
+        /*!sc*/
+        .iWzVbA .content {
+            position: relative;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            padding-left: 1.6em;
+            font-size: 1.8em;
+            font-weight: 300;
+            -webkit-letter-spacing: 0.1em;
+            -moz-letter-spacing: 0.1em;
+            -ms-letter-spacing: 0.1em;
+            letter-spacing: 0.1em;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .iWzVbA .content {
+                padding-left: 1em;
+            }
+        }
+
+        /*!sc*/
+        .iWzVbA .item {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 0 2em;
+            margin: -1.4em 0;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .iWzVbA .item {
+                padding: 0;
+            }
+        }
+
+        /*!sc*/
+        .iWzVbA .numberShadowWrapper {
+            position: absolute;
+            top: 0.6em;
+            right: 0.1em;
+            bottom: 0.1em;
+            left: 0.1em;
+            overflow: hidden;
+        }
+
+        /*!sc*/
+        .iWzVbA .numberShadow {
+            position: absolute;
+            top: calc(50% + 0.04em);
+            right: -0.2em;
+            color: #f5f6f9;
+            font-size: 25em;
+            font-weight: 600;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .iWzVbA .sectionName {
+                padding-right: 6em;
+                margin-top: 2em;
+                text-align: left;
+            }
+
+            .iWzVbA .sectionName:not(.isEven) {
+                position: relative;
+                text-align: left;
+            }
+        }
+
+        /*!sc*/
+        data-styled.g85[id="sc-l67jbg-0"] {
+            content: "iWzVbA,"
+        }
+
+        /*!sc*/
+        .gpshGr .item {
+            position: relative;
+        }
+
+        /*!sc*/
+        .gpshGr .content {
+            margin-top: 2em;
+        }
+
+        /*!sc*/
+        .gpshGr .name {
+            margin-bottom: 0.5em;
+            font-size: 1.6em;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        /*!sc*/
+        .gpshGr .date {
+            font-size: 1.6em;
+            color: #9fa5b4;
+        }
+
+        /*!sc*/
+        data-styled.g87[id="sc-65ongh-0"] {
+            content: "gpshGr,"
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .iDrKWY .wrapper {
+                position: relative;
+                padding: 0 14em;
+            }
+
+            .iDrKWY .sectionName {
+                margin-top: 2em;
+            }
+
+            .iDrKWY .sectionName.isEven {
+                text-align: left;
+            }
+        }
+
+        /*!sc*/
+        .iDrKWY .list {
+            position: relative;
+        }
+
+        /*!sc*/
+        .iDrKWY .list::before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0.6em;
+            width: 0.1em;
+            background-color: #d9e6f1;
+            content: "";
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .iDrKWY .list::before {
+                left: calc(50% - 0.1em);
+                width: 0.2em;
+            }
+        }
+
+        /*!sc*/
+        .iDrKWY .row {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .iDrKWY .row:nth-child(2n - 1) {
+                -webkit-box-pack: start;
+                -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+            }
+
+            .iDrKWY .row:nth-child(2n - 1) .itemWrapper {
+                -webkit-box-pack: end;
+                -webkit-justify-content: flex-end;
+                -ms-flex-pack: end;
+                justify-content: flex-end;
+                padding-right: 5em;
+            }
+
+            .iDrKWY .row:nth-child(2n - 1) .itemWrapper .dot {
+                right: -0.8em;
+            }
+
+            .iDrKWY .row:nth-child(2n) .itemWrapper {
+                padding-left: 5em;
+            }
+
+            .iDrKWY .row:nth-child(2n) .itemWrapper .dot {
+                left: -0.8em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .iDrKWY .row {
+                padding-left: 3em;
+            }
+
+            .iDrKWY .row:not(:last-child) {
+                margin-bottom: 2em;
+            }
+        }
+
+        /*!sc*/
+        .iDrKWY .row:last-child::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0.6em;
+            width: 0.1em;
+            background-color: #f7f8fa;
+            content: "";
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .iDrKWY .row:last-child::after {
+                left: calc(50% - 0.1em);
+                width: 0.2em;
+            }
+        }
+
+        /*!sc*/
+        .iDrKWY .itemWrapper {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .iDrKWY .itemWrapper {
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .iDrKWY .itemWrapper {
+                width: 50%;
+            }
+
+            .row:nth-child(2n) .sc-656y75-0 .itemWrapper {
+                padding-left: 5em;
+            }
+
+            .row:nth-child(2n-1) .sc-656y75-0 .itemWrapper {
+                -webkit-box-pack: end;
+                -webkit-justify-content: flex-end;
+                -ms-flex-pack: end;
+                justify-content: flex-end;
+                padding-right: 5em;
+            }
+        }
+
+        /*!sc*/
+        .iDrKWY .itemWrap {
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            padding: 3em;
+            border-width: 0.1em;
+            border-style: solid;
+            border-radius: 0.4em;
+            cursor: pointer;
+            border-color: #d9e6f1;
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .iDrKWY .itemWrap {
+                background-color: #fff;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .iDrKWY .itemWrap {
+                max-width: 35em;
+                -webkit-flex-basis: 35em;
+                -ms-flex-preferred-size: 35em;
+                flex-basis: 35em;
+            }
+        }
+
+        /*!sc*/
+        .iDrKWY .dot {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            width: 1.6em;
+            height: 1.6em;
+            border-width: 0.4em;
+            border-style: solid;
+            border-color: #fff;
+            background-color: #3983fa;
+            border-radius: 50%;
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .row:nth-child(2n) .sc-656y75-0 .dot {
+                left: -0.8em;
+            }
+
+            .row:nth-child(2n-1) .sc-656y75-0 .dot {
+                right: -0.8em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (max-width:991px) {
+            .iDrKWY .dot {
+                left: -3.1em;
+            }
+        }
+
+        /*!sc*/
+        @media only screen and (min-width:992px) {
+            .iDrKWY .itemWrapper:hover .dot {
+                border-color: #3983fa;
+            }
+
+            .iDrKWY .itemWrapper:hover .itemWrap {
+                background-color: #fff;
+            }
+        }
+
+        /*!sc*/
+        data-styled.g88[id="sc-656y75-0"] {
+            content: "iDrKWY,"
+        }
+
+        /*!sc*/
+        .fkWabV .root {
+            position: relative;
+            font-family: "HK Grotesk", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            color: #233143;
+            background-color: #f7f8fa;
+        }
+
+        /*!sc*/
+        .fkWabV .root p,
+        .fkWabV .root ul {
+            margin-bottom: 0;
+            font-size: inherit;
+        }
+
+        /*!sc*/
+        .fkWabV .root::-webkit-scrollbar {
+            width: 0;
+            background: transparent;
+        }
+
+        /*!sc*/
+        .fkWabV .container {
+            max-width: 114em;
+            margin: 0 auto;
+        }
+
+        /*!sc*/
+        data-styled.g93[id="sc-1c2wefz-0"] {
+            content: "fkWabV,"
+        }
+
+        /*!sc*/
+        @-webkit-keyframes kLosaE {
+            100% {
+                visibility: visible;
+            }
+        }
+
+        /*!sc*/
+        @keyframes kLosaE {
+            100% {
+                visibility: visible;
+            }
+        }
+
+        /*!sc*/
+        data-styled.g117[id="sc-keyframes-kLosaE"] {
+            content: "kLosaE,"
+        }
+
+        /*!sc*/
+    </style>
+    <script>
+        bazadebezolkohpepadr = "499534302"
+    </script>
+    <script type="text/javascript" src="https://bold.pro/akam/13/1dc64ada" defer=""></script>
+</head>
+
+<body>
+    <div class="loading-div" aria-hidden="true">loader</div>
+    <div id="__next">
+        <div>
+            <!--$-->
+            <div class="sc-1c2wefz-0 fkWabV">
+                <div class="userProfile">
+                    <div class="root">
+                        <div class="sc-74v6bg-0 dnvdqA">
+                            <div class="sc-1erbmoa-0 dVteTX">
+                                <div class="sc-1hgt4gk-0 bpicoW">
+                                    <div class="sectionWrapper">
+                                        <div class="bg" style="background-image:url(https://www.myperfectresume.com/blobcontent/pwb/background-images/SeniorSoftwareEngineer/Template2/@x1/1920px_1.png);width:0%"></div>
+                                        <div class="main">
+                                            <header class="container isQuotation isPhoto">
+                                                <div class="profilePhotoWrapper">
+                                                    <div class="profilePhoto"><img alt="Zeen Lin" sizes="45vw" srcset="https://assets.bold.pro/profileassets/_next/image?url=/prflphoto/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg&amp;w=384&amp;h=undefined&amp;q=70 384w, https://assets.bold.pro/profileassets/_next/image?url=/prflphoto/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg&amp;w=640&amp;h=undefined&amp;q=70 640w, https://assets.bold.pro/profileassets/_next/image?url=/prflphoto/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg&amp;w=750&amp;h=undefined&amp;q=70 750w, https://assets.bold.pro/profileassets/_next/image?url=/prflphoto/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg&amp;w=828&amp;h=undefined&amp;q=70 828w, https://assets.bold.pro/profileassets/_next/image?url=/prflphoto/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg&amp;w=1080&amp;h=undefined&amp;q=70 1080w, https://assets.bold.pro/profileassets/_next/image?url=/prflphoto/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg&amp;w=1200&amp;h=undefined&amp;q=70 1200w, https://assets.bold.pro/profileassets/_next/image?url=/prflphoto/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg&amp;w=1920&amp;h=undefined&amp;q=70 1920w, https://assets.bold.pro/profileassets/_next/image?url=/prflphoto/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg&amp;w=2048&amp;h=undefined&amp;q=70 2048w, https://assets.bold.pro/profileassets/_next/image?url=/prflphoto/mpcv-no-country/dbf506c7-79b4-4062-9202-2d140cdb64fa/cropped/1696292195407/oxywcx.jpeg&amp;w=3840&amp;h=undefined&amp;q=70 3840w" src="static/picture/image-prflphotompcv-no-countrydbf506c7-79b4-4062-9202-2d140cdb64facropped1696292195407oxywcx.jpeg_3840_undefined_70.jpg" decoding="async" data-nimg="fill" loading="lazy" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:contain;color:transparent;background-size:contain;background-position:50% 50%;background-repeat:no-repeat;background-image:url(&quot;data:image/svg+xml;charset=utf-8,%3Csvg xmlns=&#x27;http%3A//www.w3.org/2000/svg&#x27;%3E%3Cimage style=&#x27;filter:blur(20px)&#x27; x=&#x27;0&#x27; y=&#x27;0&#x27; height=&#x27;100%25&#x27; width=&#x27;100%25&#x27; href=&#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAD/UExURf79/fr5+PDu7OPe2tnSzdnSzOPd2fDt6/n4+P39/f39/Pb18+jj39PKw8S4rsS3rtPJwufi3vb08/38/Pz8+/Ty8OPc18y/tbupnMu9s+Lb1fTx7/z7+/Xy8Ofe2NPEucayosaxotPDt+bd1/Xx7/j18u3l3+DRxdbCst/QxO3k3vf08vr39fPr5enaz+HOv+HOvujazvPr5P38+vr28/Tr5Ovbz+PPv+POv+razvPq4/37+vv39Pjx6/Ll3OrYyuTNvOrXyfLl2/jw6/jw6vTn3e/cz+rSwebLuOnSwO/czvjv6fXp3/De0ezUw+nNuejKtezUwvDd0PXo3////0i/6F4AAAABYktHRFTkA4ilAAAAB3RJTUUH6AMHCiQe6sQoNQAAAHZJREFUCNdjYGBkYmZhZWPn4GTg4ubh5eMXEBQSZhARFROXkJCUkpZhkJGVk1dQVFJWkWEQVlVT19DQ1NIWYeDS0dXTNzA00uFiMDYxNTO3sLQysWawsbWzd3BwdHK2YXBxdXP38PD0cvVm8PH18w8I8A8MCgYAYXYQWu1VHzoAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMDMtMDdUMTA6MzY6MzArMDA6MDCJ7nv9AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTAzLTA3VDEwOjM2OjMwKzAwOjAw+LPDQQAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyNC0wMy0wN1QxMDozNjozMCswMDowMK+m4p4AAAAASUVORK5CYII=&#x27;/%3E%3C/svg%3E&quot;)"></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="userData">
+                                                        <h1 class="name">Zeen Lin</h1>
+                                                        <div class="moreInfoWrapper">
+                                                            <div class="moreInfoItem"><svg style="min-width:1.2em;max-width:1.2em;width:1.2em;min-height:1.2em;max-height:1.2em;height:1.2em" viewbox="0 0 14 18">
+                                                                    <path d="M6.73333 0C5.51161 0 4.38708 0.319691 3.35972 0.917375C2.34625 1.51506 1.49938 2.36293 0.902406 3.37761C0.319313 4.39228 0 5.51815 0 6.75521C0 7.42239 0.0694158 8.04788 0.236014 8.57606C0.416495 9.10425 0.735808 9.79923 1.19395 10.6471C1.49938 11.1753 2.20742 12.2595 3.22089 13.9135L5.28948 17.1799C5.51162 17.5274 5.78928 17.7776 6.17801 17.9166C6.55285 18.0278 6.91381 18.0278 7.28866 17.9166C7.67739 17.7776 7.95505 17.5274 8.17718 17.1799L10.2458 13.9135C11.2592 12.2595 11.9673 11.1753 12.2727 10.6193C12.7309 9.79923 13.0502 9.10425 13.2307 8.57606C13.3973 8.04788 13.4667 7.42239 13.4667 6.75521C13.4667 5.51815 13.1474 4.39228 12.5643 3.37761C11.9673 2.36293 11.1204 1.51506 10.1069 0.917375C9.07959 0.319691 7.95505 0 6.73333 0ZM6.73333 16.3042C6.13636 15.3591 5.40055 14.1915 4.52591 12.8293C3.58186 11.3143 2.98488 10.3274 2.69333 9.84093C2.27684 9.13205 1.99918 8.57606 1.88811 8.15907C1.74928 7.76988 1.67986 7.2695 1.67986 6.75521C1.67986 5.83784 1.92976 4.98996 2.3879 4.22548C2.83216 3.4471 3.42914 2.82162 4.2066 2.36293C4.98406 1.90425 5.81704 1.69575 6.73333 1.69575C7.64962 1.69575 8.48261 1.90425 9.26007 2.36293C10.0375 2.82162 10.6623 3.4471 11.1204 4.22548C11.5786 4.98996 11.7868 5.83784 11.7868 6.75521C11.7868 7.2695 11.7174 7.76988 11.6063 8.15907C11.4675 8.53436 11.1898 9.10425 10.8011 9.79923C10.4818 10.2996 9.88481 11.2865 8.94076 12.7876L6.73333 16.3042ZM3.92893 6.75521C3.92893 5.97683 4.2066 5.30965 4.76192 4.75367C5.28948 4.22548 5.95588 3.93359 6.73333 3.93359C7.51079 3.93359 8.17718 4.22548 8.73251 4.75367C9.26007 5.30965 9.53773 5.97683 9.53773 6.75521C9.53773 7.51969 9.26007 8.18687 8.73251 8.71506C8.17718 9.28494 7.51079 9.56293 6.73333 9.56293C5.95588 9.56293 5.28948 9.28494 4.76192 8.71506C4.2066 8.18687 3.92893 7.51969 3.92893 6.75521Z" fill="currentColor"></path>
+                                                                </svg><span class="city">Vancouver
+                                                                    <!-- -->,
+                                                                    <!-- -->
+                                                                </span><span class="county">British Columbia</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="secondWrapper">
+                                                        <div class="quotes">
+                                                            <div class="quotesIco"><svg style="min-width:10em;max-width:10em;width:10em;min-height:10em;max-height:10em;height:10em" viewbox="0 0 102 81">
+                                                                    <path d="M85.3431 80.7567C82.7639 81.1892 80.1131 81.0451 77.3907 80.3243C74.3817 79.4593 72.0891 78.3061 70.513 76.8645C66.6443 73.8373 63.7786 69.7288 61.9159 64.5392C60.1965 59.638 59.4084 54.5925 59.5517 49.4029C59.6949 45.799 60.1248 42.2672 60.8412 38.8075C63.7069 24.1036 71.1578 11.7784 83.1938 1.83163C85.3431 0.101759 86.9192 -0.40278 87.9222 0.318C88.4953 0.606307 89.57 1.54331 91.1461 3.12903C93.0088 4.85889 94.1551 6.08421 94.585 6.80498C95.1581 8.24654 94.585 9.61603 92.8656 10.9134C89.57 13.5082 87.1341 15.8147 85.558 17.8329C80.6863 23.4549 77.2474 29.4374 75.2414 35.7802C73.522 40.2491 72.8772 42.9159 73.3071 43.7809L74.3817 43.3484C76.2444 42.4835 78.8952 42.051 82.3341 42.051C85.7729 42.051 88.4953 42.4835 90.5013 43.3484C96.8059 45.9432 100.531 50.8445 101.678 58.0522C102.107 60.3587 102.107 62.6652 101.678 64.9717C100.245 73.1886 95.588 78.3061 87.7073 80.3243C86.9908 80.4684 86.2028 80.6126 85.3431 80.7567ZM25.8079 80.7567C23.2288 81.1892 20.578 81.045 17.8556 80.3243C14.8466 79.4593 12.554 78.3061 10.9779 76.8645C7.10916 73.8373 4.24345 69.7288 2.38073 64.5392C0.66131 59.638 -0.126752 54.5925 0.016528 49.4029C0.159816 45.799 0.589664 42.2672 1.30609 38.8075C4.1718 24.1036 11.6227 11.7784 23.6587 1.83162C25.8079 0.101754 27.3841 -0.402785 28.3871 0.317994C28.9602 0.606302 30.0349 1.54331 31.611 3.12902C33.4737 4.85889 34.62 6.08421 35.0498 6.80498C35.623 8.24654 35.0498 9.61602 33.3304 10.9134C30.0348 13.5082 27.599 15.8147 26.0229 17.8329C21.1512 23.4549 17.7123 29.4374 15.7063 35.7802C13.9869 40.2491 13.3421 42.9159 13.7719 43.7809L14.8466 43.3484C16.7093 42.4835 19.3601 42.051 22.7989 42.051C26.2378 42.051 28.9602 42.4835 30.9662 43.3484C37.2708 45.9432 40.9962 50.8445 42.1425 58.0522C42.5723 60.3587 42.5723 62.6652 42.1425 64.9717C40.7096 73.1886 36.0528 78.3061 28.1721 80.3243C27.4557 80.4684 26.6676 80.6126 25.8079 80.7567Z" fill="currentColor"></path>
+                                                                </svg></div>
+                                                            <div class="quotesText">The price of inaction is far greater than the cost of a mistake</div>
+                                                            <div class="quotesAuthor">Meg Whitman</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </header>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sc-isk5vx-0 gkbDHW">
+                                    <div class="sc-1hgt4gk-0 bpicoW">
+                                        <div class="sectionWrapper isEven">
+                                            <div class="bg" style="background-image:url(https://www.myperfectresume.com/blobcontent/pwb/background-images/SeniorSoftwareEngineer/Template2/@x1/1920px_1.png);width:18%"></div>
+                                            <div class="main">
+                                                <div class="sc-1jg9iwz-0 gDMbay">
+                                                    <h2 class="secName">Overview</h2>
+                                                </div>
+                                                <div class="wrapper isEven">
+                                                    <div class="content"><span class="">
+                                                            <p>Experienced in backend management systems and frontend user interface development and offering skills in Java and UI/UX design etc. Speaking both Chinese and English, and accustomed to working with global teams in a cross-cultural setting. Pursues opportunities to learn new skills and contribute to group success.</p>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sc-isk5vx-0 gkbDHW">
+                                    <div class="sc-1hgt4gk-0 bpicoW">
+                                        <div class="sectionWrapper">
+                                            <div class="bg" style="background-image:url(https://www.myperfectresume.com/blobcontent/pwb/background-images/SeniorSoftwareEngineer/Template2/@x1/1920px_1.png);width:18%"></div>
+                                            <div class="main">
+                                                <div class="sc-1jg9iwz-0 gDMbay">
+                                                    <h2 class="secName">SKILLS</h2>
+                                                </div>
+                                                <div class="wrapper ">
+                                                    <div class="content"><span class="">
+                                                            <ul>
+                                                                <li>Programming Languages: Java, C++, R, TypeScript/JavaScript, SQL(Oracle), PHP, HTML/CSS</li>
+                                                                <li>Tools and Software: Git/Github, IntelliJ, Visual Studio Code, R studio, Modao, Microsoft Word/PowerPoint/Excel</li>
+                                                                <li>Technical Skills: Software development, Web development, UI/UX Design Skills, B2C Sales</li>
+                                                            </ul>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sc-isk5vx-0 gkbDHW">
+                                    <div class="sc-1hgt4gk-0 bpicoW">
+                                        <div class="sectionWrapper isEven">
+                                            <div class="bg" style="background-image:url(https://www.myperfectresume.com/blobcontent/pwb/background-images/SeniorSoftwareEngineer/Template2/@x1/1920px_1.png);width:18%"></div>
+                                            <div class="main">
+                                                <div class="sc-1jg9iwz-0 gDMbay">
+                                                    <h2 class="secName">PROJECTS</h2>
+                                                </div>
+                                                <div class="wrapper isEven">
+                                                    <div class="content"><span class="">
+                                                            <p>Bank Backend Security Management System</p>
+                                                            <p>Co-founder</p>
+                                                            <ul>
+                                                                <li>Designed a real-time alerting and incident management system that provided immediate notifications and responses to security breaches or anomalies.</li>
+                                                                <li>Conducted rigorous unit testing, integration testing, and continuous integration to maintain code quality and reliability.</li>
+                                                            </ul>
+                                                            <p><br></p>
+                                                            <p>Food Decision Desktop Application</p>
+                                                            <p>Creator</p>
+                                                            <ul>
+                                                                <li>Develop and design the user interface with a focus on simplicity and intuitiveness, ensuring an engaging user experience.</li>
+                                                                <li>Implemented rigorous testing procedures, including unit testing and integration testing, to ensure the application's reliability and robustness.</li>
+                                                            </ul>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sc-1tpg14y-0 goJyaE">
+                                    <div class="sc-1hgt4gk-0 bpicoW">
+                                        <div class="sectionWrapper isEven">
+                                            <div class="bg" style="background-image:url(https://www.myperfectresume.com/blobcontent/pwb/background-images/SeniorSoftwareEngineer/Template2/@x1/1920px_1.png);width:30%"></div>
+                                            <div class="main">
+                                                <div class="sectionName isEven">
+                                                    <div class="sc-1jg9iwz-0 gDMbay">
+                                                        <h2 class="secName">Work History</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper isEven">
+                                                    <div class="list isEven">
+                                                        <div class="wrapperItem" id="-862107409">
+                                                            <div class="sc-11lky2b-0 cjZpEm">
+                                                                <div class="box">
+                                                                    <div class="sc-sc2xgz-0 cozkpF">
+                                                                        <div class="titleWrapper">
+                                                                            <div class="sc-ld2cos-0 gifNsU">
+                                                                                <div class="iconWrapper"><svg style="min-width:1.8em;max-width:1.8em;width:1.8em;min-height:1.8em;max-height:1.8em;height:1.8em" viewbox="0 0 18 16">
+                                                                                        <path d="M16.3168 3.38096H13.493V1.69744C13.493 1.2383 13.3261 0.806979 13.0062 0.500883C12.6862 0.180875 12.2689 0 11.8099 0H6.19011C5.73107 0 5.31376 0.180875 4.99382 0.500883C4.67388 0.806979 4.50696 1.2383 4.50696 1.69744V3.38096H1.68315C1.22411 3.38096 0.806801 3.54792 0.486862 3.86793C0.180835 4.18794 0 4.60534 0 5.06449V14.0665C0 14.5256 0.180835 14.943 0.486862 15.263C0.806801 15.583 1.22411 15.75 1.68315 15.75H16.3168C16.7759 15.75 17.1932 15.583 17.5131 15.263C17.8192 14.943 18 14.5256 18 14.0665V5.06449C18 4.60534 17.8192 4.18794 17.5131 3.86793C17.1932 3.54792 16.7759 3.38096 16.3168 3.38096ZM6.19011 1.69744H11.8099V3.38096H6.19011V1.69744ZM1.68315 14.0665V5.06449H4.50696V14.0665H1.68315ZM6.19011 14.0665V5.06449H11.8099V14.0665H6.19011ZM16.3168 14.0665H13.493V5.06449H16.3168V14.0665Z" fill="currentColor"></path>
+                                                                                    </svg></div>
+                                                                            </div>
+                                                                            <h3 class="title">Intern Software Developer</h3>
+                                                                        </div>
+                                                                        <div class="company">Ping An Bank Co., Ltd</div>
+                                                                        <div class="location"><span></span> <!-- --><span></span></div>
+                                                                        <div class="date ukdate">2023.06
+                                                                            <!-- -->
+                                                                            <!-- --> - 2023.07
+                                                                            <!-- -->
+                                                                        </div>
+                                                                        <div class="des"><span class="desContent"><span>
+                                                                                    <ul>
+                                                                                        <li>Designed and developed the Security Backend Management System that meets head office needs.</li>
+                                                                                        <li>Conducted regular security assessments and vulnerability scans, proactively identifying and addressing 7 potential security risks.</li>
+                                                                                        <li>Designed and implemented a modular architecture that allowed seamless integration of 12 security subsystems, enabling real-time monitoring and control from a single interface.</li>
+                                                                                    </ul>
+                                                                                </span></span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="wrapperItem" id="-2049098378">
+                                                            <div class="sc-11lky2b-0 cjZpEm">
+                                                                <div class="box">
+                                                                    <div class="sc-sc2xgz-0 cozkpF">
+                                                                        <div class="titleWrapper">
+                                                                            <div class="sc-ld2cos-0 gifNsU">
+                                                                                <div class="iconWrapper"><svg style="min-width:1.8em;max-width:1.8em;width:1.8em;min-height:1.8em;max-height:1.8em;height:1.8em" viewbox="0 0 18 16">
+                                                                                        <path d="M16.3168 3.38096H13.493V1.69744C13.493 1.2383 13.3261 0.806979 13.0062 0.500883C12.6862 0.180875 12.2689 0 11.8099 0H6.19011C5.73107 0 5.31376 0.180875 4.99382 0.500883C4.67388 0.806979 4.50696 1.2383 4.50696 1.69744V3.38096H1.68315C1.22411 3.38096 0.806801 3.54792 0.486862 3.86793C0.180835 4.18794 0 4.60534 0 5.06449V14.0665C0 14.5256 0.180835 14.943 0.486862 15.263C0.806801 15.583 1.22411 15.75 1.68315 15.75H16.3168C16.7759 15.75 17.1932 15.583 17.5131 15.263C17.8192 14.943 18 14.5256 18 14.0665V5.06449C18 4.60534 17.8192 4.18794 17.5131 3.86793C17.1932 3.54792 16.7759 3.38096 16.3168 3.38096ZM6.19011 1.69744H11.8099V3.38096H6.19011V1.69744ZM1.68315 14.0665V5.06449H4.50696V14.0665H1.68315ZM6.19011 14.0665V5.06449H11.8099V14.0665H6.19011ZM16.3168 14.0665H13.493V5.06449H16.3168V14.0665Z" fill="currentColor"></path>
+                                                                                    </svg></div>
+                                                                            </div>
+                                                                            <h3 class="title">Business Development Intern</h3>
+                                                                        </div>
+                                                                        <div class="company">Look4Tutor</div>
+                                                                        <div class="location"><span></span> <!-- --><span></span></div>
+                                                                        <div class="date ukdate">2021.09
+                                                                            <!-- -->
+                                                                            <!-- --> - Current
+                                                                            <!-- -->
+                                                                        </div>
+                                                                        <div class="des"><span class="desContent"><span>
+                                                                                    <ul>
+                                                                                        <li>Played an integral role in executing more than 20 event marketing initiatives, driving sales and promoting brand awareness.</li>
+                                                                                        <li>Managed customer accounts to secure customer satisfaction and repeat business.</li>
+                                                                                        <li>Delivered technical presentations matching audience's level of expertise to explain products and services to customers.</li>
+                                                                                    </ul>
+                                                                                </span></span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sc-1eqp4f3-0 huTTCg">
+                                    <div class="sc-1hgt4gk-0 bpicoW">
+                                        <div class="sectionWrapper">
+                                            <div class="bg" style="background-image:url(https://www.myperfectresume.com/blobcontent/pwb/background-images/SeniorSoftwareEngineer/Template2/@x1/1920px_1.png);width:26%"></div>
+                                            <div class="main">
+                                                <div class="sectionName ">
+                                                    <div class="sc-1jg9iwz-0 gDMbay">
+                                                        <h2 class="secName">Education</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper ">
+                                                    <div class="list ">
+                                                        <div class="wrapperItem" id="26136035">
+                                                            <div class="sc-11lky2b-0 cjZpEm">
+                                                                <div class="box">
+                                                                    <div class="sc-x3p0ih-0 duDhDs">
+                                                                        <div class="titleWrapper">
+                                                                            <div class="sc-ld2cos-0 gifNsU">
+                                                                                <div class="iconWrapper"><svg style="min-width:1.8em;max-width:1.8em;width:1.8em;min-height:1.8em;max-height:1.8em;height:1.8em" viewbox="0 0 24 15">
+                                                                                        <path d="M22.7626 3.18826C20.3439 2.42915 15.5064 0.910931 13.0876 0.151822C12.3626 -0.0506073 11.6376 -0.0506073 10.9126 0.151822C7.68762 1.16397 3.65637 2.42915 1.23762 3.18826C0.862621 3.31478 0.562621 3.52986 0.337622 3.8335C0.112622 4.13715 0.00012207 4.47874 0.00012207 4.8583C0.00012207 5.23785 0.112622 5.58578 0.337622 5.90207C0.562621 6.21837 0.862621 6.42713 1.23762 6.52834C1.52512 6.6169 1.8845 6.72761 2.10012 6.79403C2.00012 6.99646 1.92512 7.19889 1.87512 7.40132C1.67512 7.50253 1.51262 7.65435 1.38762 7.85678C1.26262 8.05921 1.20012 8.27429 1.20012 8.50203C1.20012 8.90688 1.37512 9.23583 1.72512 9.48887C1.40012 10.9438 0.993872 12.7625 0.750122 13.8537C0.725122 14.0309 0.768872 14.1953 0.881371 14.3472C0.993872 14.499 1.15012 14.5749 1.35012 14.5749C2.05012 14.5749 2.92512 14.5749 3.45012 14.5749C3.65012 14.5749 3.80637 14.499 3.91887 14.3472C4.03137 14.1953 4.07512 14.0309 4.05012 13.8537C3.72512 12.3988 3.31887 10.5801 3.07512 9.48887C3.42512 9.23583 3.60012 8.90688 3.60012 8.50203C3.60012 8.09717 3.43762 7.78087 3.11262 7.55314C3.13762 7.45192 3.18762 7.32541 3.26262 7.17358C3.95012 7.38866 4.8095 7.65752 5.32512 7.81883C5.19387 8.90056 4.93137 11.064 4.80012 12.1458C4.80012 12.5759 5.12512 12.9808 5.77512 13.3603C6.42512 13.7399 7.30012 14.0435 8.40012 14.2713C9.50012 14.4737 10.7001 14.5749 12.0001 14.5749C13.3001 14.5749 14.5001 14.4737 15.6001 14.2713C16.7001 14.0435 17.5751 13.7399 18.2251 13.3603C18.8751 12.9808 19.2001 12.5759 19.2001 12.1458C19.0251 10.7034 18.8064 8.90056 18.6751 7.81883C19.697 7.49621 21.7407 6.85096 22.7626 6.52834C23.1376 6.42713 23.4376 6.21837 23.6626 5.90207C23.8876 5.58578 24.0001 5.23785 24.0001 4.8583C24.0001 4.47874 23.8876 4.13715 23.6626 3.8335C23.4376 3.52986 23.1376 3.31478 22.7626 3.18826ZM17.3251 11.7662C16.6251 12.1964 15.5376 12.4874 14.0626 12.6392C12.6876 12.791 11.3001 12.791 9.90012 12.6392C8.45012 12.4874 7.37512 12.1964 6.67512 11.7662C6.81262 10.6275 6.9845 9.2042 7.08762 8.3502C8.04387 8.65385 9.95637 9.26113 10.9126 9.56478C11.6376 9.79251 12.3626 9.79251 13.0876 9.56478C14.3626 9.15992 15.9564 8.65385 16.9126 8.3502C17.0157 9.2042 17.222 10.9122 17.3251 11.7662ZM12.5626 7.81883C12.1876 7.92004 11.8126 7.92004 11.4376 7.81883C9.56262 7.22419 7.21887 6.4809 5.81262 6.03492C7.38762 5.74077 10.5376 5.15245 12.1126 4.8583C12.2626 4.833 12.3876 4.75076 12.4876 4.61159C12.5876 4.47242 12.6251 4.32692 12.6001 4.1751C12.5751 3.99798 12.4939 3.85881 12.3564 3.75759C12.2189 3.65638 12.0626 3.61842 11.8876 3.64373C9.33762 4.13715 6.15012 4.75392 4.23762 5.12399C4.03762 5.14929 3.81262 5.2252 3.56262 5.35172C3.03762 5.18725 2.38137 4.98166 1.98762 4.8583C4.35012 4.11817 9.07512 2.63791 11.4376 1.89777C11.8126 1.79656 12.1876 1.79656 12.5626 1.89777C15.7126 2.88462 19.6501 4.11817 22.0126 4.8583C19.6501 5.59843 14.9251 7.07869 12.5626 7.81883Z" fill="currentColor"></path>
+                                                                                    </svg></div>
+                                                                            </div>
+                                                                            <h3 class="title">Bachelor of Science
+                                                                                <!-- -->
+                                                                                <!-- --> - Computer Science
+                                                                                <!-- -->
+                                                                            </h3>
+                                                                        </div><span class="school ukschool">University of British Columbia
+                                                                            <!-- --><span class="edulocation"><span>, Vancouver, BC</span></span>
+                                                                        </span>
+                                                                        <div class="date ukdate">11.2025</div>
+                                                                        <div class="des"><span class="desContent"><span>
+                                                                                    <p>Dean's Honour List</p>
+                                                                                </span></span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><br><br><br><br><br><br><br></div>
+                            <div class="skinWrapperAdditional"></div>
+                        </div>
+                        <div class="sc-5cfd0j-0 bZsbQD">
+                        </div>
+                    </div>
+                    <footer class="sc-1k8xofi-0 tNXKD">
+                        <div class="container">
+                            <div class="flex">
+                                <div class="footerBtns"><span class="name">Zeen
+                                        <!-- -->
+                                        <!-- -->Lin
+                                        <!-- -->
+                                    </span><button class="contactBtnFooter" id="vibesContactPreviewBtn" type="button"><svg style="min-width:0.9em;max-width:0.9em;width:0.9em;min-height:0.9em;max-height:0.9em;height:0.9em" viewbox="0 0 16 16">
+                                            <path xmlns="http://www.w3.org/2000/svg" d="M14.5006 11.6C14.5024 11.4305 14.4425 11.266 14.3322 11.1373C14.2219 11.0085 14.0687 10.9242 13.9009 10.9C13.1013 10.8 12.4016 10.6 11.702 10.3C11.5647 10.2444 11.4133 10.2338 11.2696 10.2697C11.1259 10.3057 10.9973 10.3863 10.9023 10.5L10.0028 11.5C9.87013 11.5903 9.71341 11.6386 9.55298 11.6386C9.39256 11.6386 9.23584 11.5903 9.1032 11.5C7.20149 10.431 5.61548 8.87868 4.5054 7.00002C4.39185 6.85813 4.32998 6.68178 4.32998 6.50002C4.32998 6.31825 4.39185 6.14191 4.5054 6.00002L5.50492 5.10002C5.58218 5.00272 5.63217 4.88659 5.64973 4.76357C5.6673 4.64055 5.65181 4.51507 5.60487 4.40002C5.35587 3.68789 5.18821 2.94987 5.10511 2.20002C5.08091 2.03219 4.99663 1.87886 4.86795 1.7685C4.73927 1.65815 4.57492 1.59828 4.40544 1.60002H2.20649C2.10556 1.59898 2.0056 1.61981 1.91347 1.66106C1.82134 1.70232 1.73923 1.76303 1.67276 1.83903C1.60629 1.91503 1.55705 2.00451 1.52841 2.10135C1.49976 2.19818 1.4924 2.30007 1.50683 2.40002C1.80668 4.40002 2.50635 6.50002 3.70578 8.40002C4.73878 10.0028 6.10185 11.3665 7.70387 12.4C9.49988 13.5995 11.5557 14.3537 13.701 14.6C13.8009 14.6145 13.9027 14.6071 13.9995 14.5784C14.0963 14.5498 14.1858 14.5005 14.2617 14.434C14.3377 14.3675 14.3984 14.2854 14.4396 14.1932C14.4808 14.101 14.5017 14.001 14.5006 13.9V11.7V11.6ZM15.9999 13.8C15.9986 14.1004 15.9359 14.3973 15.8156 14.6725C15.6952 14.9476 15.5199 15.1952 15.3002 15.4C14.8005 15.8 14.2008 16 13.6011 16C11.245 15.7262 8.98575 14.9042 7.0042 13.6C5.16426 12.4505 3.59557 10.9151 2.4064 9.10002C1.08464 7.0898 0.262175 4.79267 0.007544 2.40002C-0.0181603 2.09035 0.0219936 1.77875 0.125362 1.48574C0.22873 1.19272 0.392967 0.924939 0.607258 0.700019C0.811945 0.4803 1.05943 0.304841 1.33448 0.184453C1.60952 0.0640647 1.90628 0.00129761 2.20649 1.8875e-05H4.40544C4.9556 -0.00225991 5.48663 0.201874 5.89372 0.572132C6.30081 0.94239 6.55438 1.45187 6.60439 2.00002L7.10415 3.80002C7.40401 4.60002 7.10415 5.50002 6.60439 6.10002L6.10463 6.60002C6.94162 7.96161 8.06769 9.12237 9.40306 10L9.90282 9.50002C10.1993 9.20742 10.5728 9.00509 10.9798 8.91657C11.3868 8.82805 11.8105 8.85699 12.2017 9.00002C12.8136 9.23872 13.4508 9.40648 14.1008 9.50002C14.6306 9.57296 15.1157 9.83657 15.4653 10.2415C15.8148 10.6465 16.0049 11.165 15.9999 11.7V13.9V13.8Z" fill="white"></path>
+                                        </svg><span>Contact me</span></button></div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <!--/$-->
+        </div>
+    </div><noscript><img src="https://bold.pro/akam/13/pixel_1dc64ada?a=dD1lOWY2OWU1YmI0YmQzZDM3MjU3OGNlNDJjNGQzYTJiN2JkNzc4YzMwJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;"></noscript> <a href="https://smalltool.github.io/" style="display:none;">网页批量下载器</a>
+</body>
+
+</html>
